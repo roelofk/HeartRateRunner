@@ -1,0 +1,8 @@
+<resources>
+	<string id="AppName">HeartRateRunner</string>
+    <string id="pace">PACE</string>
+    <string id="avgpace">DS PACE</string>
+    <string id="hr">PULS</string>
+    <string id="distance">DIST</string>
+    <string id="duration">DAUER</string>
+</resources>
