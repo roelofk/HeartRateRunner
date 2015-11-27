@@ -1,6 +1,6 @@
 # HeartRateRunner
 
-![RunnersField Screenshot Bright](/doc/HeartRateRunner1.png) ![RunnersField Screenshot Dark](/doc/HeartRateRunner2.png)
+![HeartRateRunner Screenshot Bright](/doc/HeartRateRunner1.png) ![HeartRateRunner Screenshot Dark](/doc/HeartRateRunner2.png)
 
 This is free a Data Field for the Fenix 3 that shows multiple values on a single field. 
 RunnersField is open source and its code resides at github: https://github.com/roelofk/HeartRateRunner
@@ -58,19 +58,17 @@ Hopefully you see the HeartRateRunner datafield and can read the values.
 
 ===============================================
 
-## Changelog 1.0.0
-* Heart rate zone color arcs
-* Heart rate zone indicator
-* Heart rate zones are currently fixed:
-* zone1 = 117;
-* zone2 = 131;
-* zone3 = 145;
-* zone4 = 159;
-* zone5 = 173;
-* hrmax = 187;
+## Changelog 1.0.1
+* Heart rate zone indicator now black with white edges, hopefully better visible
+* Heart rate zones are calculated with age: hrmax = 217 - (0.85 × age)
+* zone1 = maxHr * 0.64; 
+* zone2 = maxHr * 0.72; 
+* zone3 = maxHr * 0.79; 
+* zone4 = maxHr * 0.87;
+* zone5 = maxHr * 0.94;
+* hrmax = 217 - (0.85 × age);
 
 ===============================================
 
 ## Future changes
-* Heart rate zone calculation
 * Time spend in heart rate zone

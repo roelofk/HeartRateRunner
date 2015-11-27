@@ -2,31 +2,19 @@
     <iq:application entry="HeartRateRunner" id="AA5E8788686E4D58A0E94F434FBA1A9E" launcherIcon="LauncherIcon" name="AppName" type="datafield">
 
         <iq:products>
+            <iq:product id="round_watch"/>
             <iq:product id="fenix3"/>
             <iq:product id="d2bravo"/>
-            <iq:product id="round_watch"/>
-            <!--
-            <iq:product id="square_watch"/>
-            <iq:product id="semi_round_watch"/>
-            <iq:product id="fr630"/>
-            <iq:product id="fr235"/>
-            <iq:product id="fr230"/>
-            <iq:product id="vivoactive"/>
-            <iq:product id="fr920xt"/>
-            <iq:product id="epix"/>
-            <iq:product id="edge_1000"/>
-            <iq:product id="edge_520"/>
-             -->
         </iq:products>
 
         <iq:permissions>
-        	<!-- <iq:uses-permission id="UserProfile"/> -->
+            <iq:uses-permission id="UserProfile"/>
         </iq:permissions>
 
         <iq:languages>
             <iq:language>deu</iq:language>
-            <iq:language>eng</iq:language>
             <iq:language>dut</iq:language>
+            <iq:language>eng</iq:language>
         </iq:languages>
 
     </iq:application>

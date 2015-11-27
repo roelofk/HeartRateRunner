@@ -2,6 +2,9 @@ using Toybox.Application as App;
 using Toybox.WatchUi as Ui;
 using Toybox.Graphics as Graphics;
 using Toybox.System as System;
+using Toybox.UserProfile as UserProfile;
+using Toybox.Time as Time;
+using Toybox.Time.Gregorian as Gregorian;
 
 //! @author Roelof Koelewijn - Many thanks to Konrad Paumann for the code for the dataFields check out his awsome runningfields Datafield
 class HeartRateRunner extends App.AppBase {
@@ -45,11 +48,15 @@ class HeartRateRunnerView extends Ui.DataField {
     hidden var distance = 0;
     hidden var elapsedTime = 0;
     hidden var gpsSignal = 0;
+    hidden var maxHr = 0;
     
     hidden var hasBackgroundColorOption = false;
     
     function initialize() {
         DataField.initialize();
+        var profile = UserProfile.getProfile();
+		var userAge = Gregorian.info(Time.now(), Time.FORMAT_SHORT).year - profile.birthYear;
+		maxHr = 217 - (0.85 * userAge);
     }
 
     //! The given info object contains all the current workout
@@ -75,8 +82,10 @@ class HeartRateRunnerView extends Ui.DataField {
     function onUpdate(dc) {
         setColors();
         // reset background
+        var width = dc.getWidth();
+    	var height = dc.getHeight();
         dc.setColor(backgroundColor, backgroundColor);
-        dc.fillRectangle(0, 0, 218, 218);
+        dc.fillRectangle(0, 0, width, height);
         
         drawValues(dc);
     }
@@ -177,7 +186,6 @@ class HeartRateRunnerView extends Ui.DataField {
         
         // time
         dc.setColor(inverseTextColor, Graphics.COLOR_TRANSPARENT);
-        //dc.drawText(112, 207, HEADER_FONT, distanceUnits == System.UNIT_METRIC ? "(km)" : "(mi)", CENTER);
         dc.drawText(109, 207, HEADER_FONT, time, CENTER);
         
         drawBattery(System.getSystemStats().battery, dc, 64, 186, 25, 15);
@@ -197,7 +205,6 @@ class HeartRateRunnerView extends Ui.DataField {
         dc.setColor(headerColor, Graphics.COLOR_TRANSPARENT);
         dc.drawText(65, 42, HEADER_FONT, paceStr, CENTER);
         dc.drawText(65, 169, HEADER_FONT, avgPaceStr, CENTER);
-        //dc.drawText(109, 38, HEADER_FONT, hrStr, CENTER); 
         dc.drawText(155, 42, HEADER_FONT, distanceStr, CENTER);
         dc.drawText(155, 169, HEADER_FONT, durationStr, CENTER);
         
@@ -314,14 +321,24 @@ class HeartRateRunnerView extends Ui.DataField {
 		var zone4CircleWidth = 7;
 		var zone5CircleWidth = 7;
 		
-		var zone1 = 117;
-	    var zone2 = 131;
-	    var zone3 = 145;
-	    var zone4 = 159;
-	    var zone5 = 173;
-	    var hrmax = 187;
+		var zone1 = maxHr * 0.64; 
+	    var zone2 = maxHr * 0.72; 
+	    var zone3 = maxHr * 0.79; 
+	    var zone4 = maxHr * 0.87;
+	    var zone5 = maxHr * 0.94;
+	    var hrmax = maxHr;
+		
+		//var zone1 = 117;
+	    //var zone2 = 131;
+	    //var zone3 = 145;
+	    //var zone4 = 159;
+	    //var zone5 = 173;
+	    //var hrmax = 187;
 	    
-	    var zonedegree = 3.9;
+	    var zonedegree = 54 / (zone2 - zone1); //3.9
+	    
+	    //test
+		//hr = 178;
 		
 		if(hr >= zone1 && hr < zone2){
 			zone1CircleWidth = 15;
@@ -345,7 +362,10 @@ class HeartRateRunnerView extends Ui.DataField {
 		dc.setPenWidth(zone1CircleWidth);
 		dc.drawArc(centerX, centerY, radius - zone1CircleWidth/2, 1, 220, 166);
 		if(hr >= zone1 && hr < zone2){
-			dc.setColor(Graphics.COLOR_PINK, Graphics.COLOR_TRANSPARENT);
+			dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+			dc.setPenWidth(20);
+			dc.drawArc(centerX, centerY, radius - 8, 0, 166 + zonedegree - 3, 166 + zonedegree + 1);
+			dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
 			dc.setPenWidth(17);
 			dc.drawArc(centerX, centerY, radius - 8, 0, 166 + zonedegree - 2, 166 + zonedegree);
 		}
@@ -355,7 +375,10 @@ class HeartRateRunnerView extends Ui.DataField {
 		dc.setPenWidth(zone2CircleWidth);
 		dc.drawArc(centerX, centerY, radius - zone2CircleWidth/2, 1, 166, 112);
 		if(hr >= zone2 && hr < zone3){
-			dc.setColor(Graphics.COLOR_PINK, Graphics.COLOR_TRANSPARENT);
+			dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+			dc.setPenWidth(20);
+			dc.drawArc(centerX, centerY, radius - 8, 0, 112 + zonedegree - 3, 112 + zonedegree + 1);
+			dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
 			dc.setPenWidth(17);
 			dc.drawArc(centerX, centerY, radius - 8, 0, 112 + zonedegree -2, 112 + zonedegree);
 		}
@@ -365,7 +388,10 @@ class HeartRateRunnerView extends Ui.DataField {
 		dc.setPenWidth(zone3CircleWidth);
 		dc.drawArc(centerX, centerY, radius - zone3CircleWidth/2, 1, 112, 58);
 		if(hr >= zone3 && hr < zone4){
-			dc.setColor(Graphics.COLOR_PINK, Graphics.COLOR_TRANSPARENT);
+			dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+			dc.setPenWidth(20);
+			dc.drawArc(centerX, centerY, radius - 8, 0, 58 + zonedegree - 3, 58 + zonedegree + 1);
+			dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
 			dc.setPenWidth(17);
 			dc.drawArc(centerX, centerY, radius - 8, 0, 58 + zonedegree - 2, 58 + zonedegree);
 		}
@@ -375,7 +401,10 @@ class HeartRateRunnerView extends Ui.DataField {
 		dc.setPenWidth(zone4CircleWidth);
 		dc.drawArc(centerX, centerY, radius - zone4CircleWidth/2, 1, 58, 4);
 		if(hr >= zone4 && hr < zone5){
-			dc.setColor(Graphics.COLOR_PINK, Graphics.COLOR_TRANSPARENT);
+			dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+			dc.setPenWidth(20);
+			dc.drawArc(centerX, centerY, radius - 8, 0, 4 + zonedegree - 3, 4 + zonedegree + 1);
+			dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
 			dc.setPenWidth(17);
 			dc.drawArc(centerX, centerY, radius - 8, 0, 4 + zonedegree - 2, 4 + zonedegree);
 		}
@@ -385,7 +414,14 @@ class HeartRateRunnerView extends Ui.DataField {
 		dc.setPenWidth(zone5CircleWidth);
 		dc.drawArc(centerX, centerY, radius - zone5CircleWidth/2, 1, 4, 320);
 		if(hr >= zone5){
-			dc.setColor(Graphics.COLOR_PINK, Graphics.COLOR_TRANSPARENT);
+			dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+			dc.setPenWidth(20);
+			if((320 + zonedegree) < 360){
+				dc.drawArc(centerX, centerY, radius - 8, 0, 320 + zonedegree - 3, 320 + zonedegree + 1);
+			}else{
+				dc.drawArc(centerX, centerY, radius - 8, 0, -50 + zonedegree - 3 , -50 + zonedegree + 1);
+			}
+			dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
 			dc.setPenWidth(17);
 			if((320 + zonedegree) < 360){
 				dc.drawArc(centerX, centerY, radius - 8, 0, 320 + zonedegree - 2, 320 + zonedegree);
@@ -405,19 +441,19 @@ class HeartRateRunnerView extends Ui.DataField {
 	//! @author Roelof Koelewijn
 	//function for arrow
 	function fillPolygon(dc, dx, dy, theta, points) {
-    var sin = Math.sin(theta);
-    var cos = Math.cos(theta);
-
-    for (var i = 0; i < points.size(); ++i) {
-        var x = (points[i][0] * cos) - (points[i][1] * sin) + dx;
-        var y = (points[i][0] * sin) + (points[i][1] * cos) + dy;
-
-        points[i][0] = x;
-        points[i][1] = y;
-    }
-	dc.setColor(Graphics.COLOR_PINK, Graphics.COLOR_TRANSPARENT);
-    dc.fillPolygon(points);
-}
+	    var sin = Math.sin(theta);
+	    var cos = Math.cos(theta);
+	
+	    for (var i = 0; i < points.size(); ++i) {
+	        var x = (points[i][0] * cos) - (points[i][1] * sin) + dx;
+	        var y = (points[i][0] * sin) + (points[i][1] * cos) + dy;
+	
+	        points[i][0] = x;
+	        points[i][1] = y;
+	    }
+		dc.setColor(Graphics.COLOR_PINK, Graphics.COLOR_TRANSPARENT);
+	    dc.fillPolygon(points);
+	}
 }
 
 //! A circular queue implementation.
