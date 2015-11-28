@@ -327,32 +327,27 @@ class HeartRateRunnerView extends Ui.DataField {
 	    var zone4 = maxHr * 0.87;
 	    var zone5 = maxHr * 0.94;
 	    var hrmax = maxHr;
-		
-		//var zone1 = 117;
-	    //var zone2 = 131;
-	    //var zone3 = 145;
-	    //var zone4 = 159;
-	    //var zone5 = 173;
-	    //var hrmax = 187;
 	    
 	    var zonedegree = 54 / (zone2 - zone1); //3.9
-	    
-	    //test
-		//hr = 178;
 		
 		if(hr >= zone1 && hr < zone2){
 			zone1CircleWidth = 15;
+			zonedegree = 54 / (zone2 - zone1);
 			zonedegree = zonedegree * (zone2-hr);
 		}else if(hr >= zone2 && hr < zone3){
 			zone2CircleWidth = 15;
+			zonedegree = 54 / (zone3 - zone2);
 			zonedegree = zonedegree * (zone3-hr);
 		}else if(hr >= zone3 && hr < zone4){
+			zonedegree = 54 / (zone4 - zone3);
 			zone3CircleWidth = 15;
 			zonedegree = zonedegree * (zone4-hr);
 		}else if(hr >= zone4 && hr < zone5){
+			zonedegree = 54 / (zone5 - zone4);
 			zone4CircleWidth = 15;
 			zonedegree = zonedegree * (zone5-hr);
 		}else if(hr >= zone5){
+			zonedegree = 54 / (hrmax - zone5);
 			zone5CircleWidth = 15;
 			zonedegree = zonedegree * (hrmax-hr);
 		}
