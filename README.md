@@ -1,16 +1,19 @@
-# HeartRateRunner
+# Heart Rate Runner
 
 ![HeartRateRunner Screenshot Bright](/doc/HeartRateRunner1.png) ![HeartRateRunner Screenshot Dark](/doc/HeartRateRunner2.png)
 
+Shows heart rate color arcs with a heart rate indicator.
 This is free a Data Field for the Fenix 3 that shows multiple values on a single field. 
-RunnersField is open source and its code resides at github: https://github.com/roelofk/HeartRateRunner
+Heart Rate Runner is open source and its code resides at github: https://github.com/roelofk/HeartRateRunner
+
+Release versions of Heart Rate Runner are published in the [Garmin App Store](https://apps.garmin.com/nl-NL/apps/cb7742e6-1914-490f-b581-fa41ad863b72)
 
 ===============================================
 
 ## Special thanks
 * To Konrad Paumann
 * Thank you for your hard work and making your code freely available!!!
-* HeartRateRunner datafield is an addition to RunnersField
+* Heart Rate Runner datafield is an addition to RunnersField
 * RunnersField is open source and its code resides at github: https://github.com/kopa/RunnersField
 * Release versions of RunnersField are published in the [Garmin App Store](https://apps.garmin.com/en-US/apps/8428701b-e621-4156-9d4e-37d92b30151f)
 
@@ -21,6 +24,7 @@ RunnersField is open source and its code resides at github: https://github.com/r
 ===============================================
 
 ## Features
+* HEART RATE: shows five colored zones. Zone is made thicker when in zone and indicator shows where in the zone you are.
 * TIME: 12/24h mode based on system settings.
 * PACE: pace in km/min or mi/min based on system settings (as average of the last 10 values).
 * AVG PACE: average pace over the whole activity.
@@ -57,6 +61,12 @@ Start Run activity.
 Hopefully you see the HeartRateRunner datafield and can read the values.
 
 ===============================================
+
+## Changelog 1.0.3
+* fixed an error
+
+## Changelog 1.0.2
+* heart rate indicator better accuracy
 
 ## Changelog 1.0.1
 * Heart rate zone indicator now black with white edges, hopefully better visible

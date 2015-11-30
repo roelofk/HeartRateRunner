@@ -34,10 +34,7 @@ class HeartRateRunnerView extends Ui.DataField {
     hidden var inverseTextColor = Graphics.COLOR_WHITE;
     hidden var backgroundColor = Graphics.COLOR_WHITE;
     hidden var inverseBackgroundColor = Graphics.COLOR_BLACK;
-    hidden var inactiveGpsBackground = Graphics.COLOR_LT_GRAY;
-    hidden var batteryBackground = Graphics.COLOR_WHITE;
-    hidden var batteryColor1 = Graphics.COLOR_GREEN;
-    hidden var hrColor = Graphics.COLOR_RED;
+    hidden var lineColor = Graphics.COLOR_RED;
     hidden var headerColor = Graphics.COLOR_DK_GRAY;
         
     hidden var paceStr, avgPaceStr, hrStr, distanceStr, durationStr;
@@ -49,6 +46,9 @@ class HeartRateRunnerView extends Ui.DataField {
     hidden var elapsedTime = 0;
     hidden var gpsSignal = 0;
     hidden var maxHr = 0;
+    hidden var zoneId = 0;
+    hidden var secondsInZone = [0, 0, 0, 0, 0, 0];
+    hidden var zoneLowerBound = [0, 120, 140, 160, 180];
     
     hidden var hasBackgroundColorOption = false;
     
@@ -57,6 +57,7 @@ class HeartRateRunnerView extends Ui.DataField {
         var profile = UserProfile.getProfile();
 		var userAge = Gregorian.info(Time.now(), Time.FORMAT_SHORT).year - profile.birthYear;
 		maxHr = 217 - (0.85 * userAge);
+		zoneLowerBound = [maxHr * 0.64, maxHr * 0.72, maxHr * 0.79, maxHr * 0.87, maxHr * 0.94];
     }
 
     //! The given info object contains all the current workout
@@ -71,8 +72,22 @@ class HeartRateRunnerView extends Ui.DataField {
         elapsedTime = info.elapsedTime != null ? info.elapsedTime : 0;        
         hr = info.currentHeartRate != null ? info.currentHeartRate : 0;
         distance = info.elapsedDistance != null ? info.elapsedDistance : 0;
-        gpsSignal = info.currentLocationAccuracy;
-    }
+        hr = 120;
+	    if (hr != null) {
+			zoneId = getZoneIdForHr(hr) - 1;
+			System.println("Hello Monkey C! " + zoneId);
+			if(zoneId >= 0){
+				secondsInZone[zoneId] += 1;
+				//System.println("Hello Monkey C! " + zoneId);
+			}
+		}
+	}
+	
+	hidden function getZoneIdForHr(hr) {
+		var i;	
+		for (i = 0; i < zoneLowerBound.size() && hr > zoneLowerBound[i]; ++i) { }
+		return i;
+	}
     
     function onLayout(dc) {
         setDeviceSettingsDependentVariables();
@@ -114,13 +129,15 @@ class HeartRateRunnerView extends Ui.DataField {
             textColor = (backgroundColor == Graphics.COLOR_BLACK) ? Graphics.COLOR_WHITE : Graphics.COLOR_BLACK;
             inverseTextColor = (backgroundColor == Graphics.COLOR_BLACK) ? Graphics.COLOR_WHITE : Graphics.COLOR_WHITE;
             inverseBackgroundColor = (backgroundColor == Graphics.COLOR_BLACK) ? Graphics.COLOR_DK_GRAY: Graphics.COLOR_BLACK;
-            hrColor = (backgroundColor == Graphics.COLOR_BLACK) ? Graphics.COLOR_BLUE : Graphics.COLOR_RED;
+            lineColor = (backgroundColor == Graphics.COLOR_BLACK) ? Graphics.COLOR_BLUE : Graphics.COLOR_RED;
             headerColor = (backgroundColor == Graphics.COLOR_BLACK) ? Graphics.COLOR_LT_GRAY: Graphics.COLOR_DK_GRAY;
-            batteryColor1 = (backgroundColor == Graphics.COLOR_BLACK) ? Graphics.COLOR_BLUE : Graphics.COLOR_DK_GREEN;
         }
     }
         
     function drawValues(dc) {
+        var width = dc.getWidth();
+    	var height = dc.getHeight();
+        
         //time
         var clockTime = System.getClockTime();
         var time, ampm;
@@ -134,15 +151,11 @@ class HeartRateRunnerView extends Ui.DataField {
         
         //pace
         dc.setColor(textColor, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(60, 74, VALUE_FONT, getMinutesPerKmOrMile(computeAverageSpeed()), CENTER);
-        
-        //hr
-        dc.setColor(hrColor, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(109, 30, Graphics.FONT_NUMBER_MILD, hr.format("%d"), CENTER);
+        dc.drawText(60, 85, VALUE_FONT, getMinutesPerKmOrMile(computeAverageSpeed()), CENTER);
         
         //apace
         dc.setColor(textColor, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(60, 134, VALUE_FONT, getMinutesPerKmOrMile(avgSpeed), CENTER);
+        dc.drawText(60, 140, VALUE_FONT, getMinutesPerKmOrMile(avgSpeed), CENTER);
         
         //distance
         var distStr;
@@ -156,7 +169,7 @@ class HeartRateRunnerView extends Ui.DataField {
         } else {
             distStr = ZERO_DISTANCE;
         }
-        dc.drawText(155 , 74, VALUE_FONT, distStr, CENTER);
+        dc.drawText(155 , 85, VALUE_FONT, distStr, CENTER);
         
         //duration
         var duration;
@@ -178,89 +191,62 @@ class HeartRateRunnerView extends Ui.DataField {
         } else {
             duration = ZERO_TIME;
         } 
-        dc.drawText(155, 134, VALUE_FONT, duration, CENTER);
+        dc.drawText(155, 140, VALUE_FONT, duration, CENTER);
         
         //signs background
         dc.setColor(inverseBackgroundColor, inverseBackgroundColor);
-        dc.fillRectangle(0,180,218,38);
+        dc.fillRectangle(0,180,width,38);
+        
+        //hr
+		dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        //dc.setColor(lineColor, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(109, 197, Graphics.FONT_LARGE, hr.format("%d"), CENTER);
         
         // time
         dc.setColor(inverseTextColor, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(109, 207, HEADER_FONT, time, CENTER);
+        dc.drawText(150, 197, HEADER_FONT, time, CENTER);
         
-        drawBattery(System.getSystemStats().battery, dc, 64, 186, 25, 15);
-        
-        // gps 
-        if (gpsSignal < 2) {
-            drawGpsSign(dc, 136, 181, inactiveGpsBackground, inactiveGpsBackground, inactiveGpsBackground);
-        } else if (gpsSignal == 2) {
-            drawGpsSign(dc, 136, 181, batteryColor1, inactiveGpsBackground, inactiveGpsBackground);
-        } else if (gpsSignal == 3) {          
-            drawGpsSign(dc, 136, 181, batteryColor1, batteryColor1, inactiveGpsBackground);
-        } else {
-            drawGpsSign(dc, 136, 181, batteryColor1, batteryColor1, batteryColor1);
-        }
-        
-        // headers:
-        dc.setColor(headerColor, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(65, 42, HEADER_FONT, paceStr, CENTER);
-        dc.drawText(65, 169, HEADER_FONT, avgPaceStr, CENTER);
-        dc.drawText(155, 42, HEADER_FONT, distanceStr, CENTER);
-        dc.drawText(155, 169, HEADER_FONT, durationStr, CENTER);
-        
-        //grid
-        dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
+        //grid 
+        //dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
+        dc.setColor(lineColor, Graphics.COLOR_TRANSPARENT);
         dc.setPenWidth(1);
-        dc.drawLine(0, 108, dc.getWidth(), 108);
+        dc.drawLine(0, height/2 + 7, width, height/2 + 7);
         
-        //RKO Arc
-		var width = dc.getWidth();
-    	var height = dc.getHeight();
-		drawZoneBarsArcs(dc, (height/2)+1, width/2, height/2, hr); //radius, center x, center y
-    }
-    
-    function drawBattery(battery, dc, xStart, yStart, width, height) {                
-        dc.setColor(batteryBackground, inactiveGpsBackground);
-        dc.fillRectangle(xStart, yStart, width, height);
-        if (battery < 10) {
-            dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_TRANSPARENT);
-            dc.drawText(xStart+3 + width / 2, yStart + 6, HEADER_FONT, format("$1$%", [battery.format("%d")]), CENTER);
-        }
-        
-        if (battery < 10) {
-            dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_TRANSPARENT);
-        } else if (battery < 30) {
-            dc.setColor(Graphics.COLOR_YELLOW, Graphics.COLOR_TRANSPARENT);
-        } else {
-            dc.setColor(batteryColor1, Graphics.COLOR_TRANSPARENT);
-        }
-        dc.fillRectangle(xStart + 1, yStart + 1, (width-2) * battery / 100, height - 2);
+        //RKO Arcs
+		var zone = drawZoneBarsArcs(dc, (height/2)+1, width/2, height/2, hr); //radius, center x, center y
+		
+		//time in zone
+		var timeInZone;
+		if (zoneId >= 0 && secondsInZone[zoneId] != null && secondsInZone[zoneId] > 0) {
+            var hours = null;
+            var minutes = secondsInZone[zoneId]/ 60;
+            var seconds = secondsInZone[zoneId];
             
-        dc.setColor(batteryBackground, batteryBackground);
-        dc.fillRectangle(xStart + width - 1, yStart + 3, 4, height - 6);
-    }
-    
-    function drawGpsSign(dc, xStart, yStart, color1, color2, color3) {
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.setPenWidth(1);
-        dc.drawRectangle(xStart - 1, yStart + 11, 8, 10);
-        dc.setColor(color1, Graphics.COLOR_TRANSPARENT);
-        dc.setPenWidth(1);
-        dc.fillRectangle(xStart, yStart + 12, 6, 8);
-        
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.setPenWidth(1);
-        dc.drawRectangle(xStart + 6, yStart + 7, 8, 14);
-        dc.setColor(color2, Graphics.COLOR_TRANSPARENT);
-        dc.setPenWidth(1);
-        dc.fillRectangle(xStart + 7, yStart + 8, 6, 12);
-        
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.setPenWidth(1);
-        dc.drawRectangle(xStart + 13, yStart + 3, 8, 18);
-        dc.setColor(color3, Graphics.COLOR_TRANSPARENT);
-        dc.setPenWidth(1);
-        dc.fillRectangle(xStart + 14, yStart + 4, 6, 16);
+            if (minutes >= 60) {
+                hours = minutes / 60;
+                minutes = minutes % 60;
+            }
+            
+            if (hours == null) {
+                timeInZone = minutes.format("%d") + ":" + seconds.format("%02d");
+            } else {
+                timeInZone = hours.format("%d") + ":" + minutes.format("%02d") + ":" + seconds.format("%02d");
+            }
+            dc.setColor(textColor, Graphics.COLOR_TRANSPARENT);
+        	dc.drawText(109, 40, Graphics.FONT_MEDIUM, timeInZone, CENTER);
+        } else {
+            timeInZone = ZERO_TIME;
+        }
+
+		// headers:
+        dc.setColor(headerColor, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(65, 55, HEADER_FONT, paceStr, CENTER);
+        dc.drawText(65, 172, HEADER_FONT, avgPaceStr, CENTER);
+        dc.drawText(155, 55, HEADER_FONT, distanceStr, CENTER);
+        dc.drawText(155, 172, HEADER_FONT, durationStr, CENTER);
+        if(zone != 0){
+        	dc.drawText(109, 25, HEADER_FONT, "Time " + hrStr + " " + zone, CENTER);
+        }
     }
     
     function computeAverageSpeed() {
@@ -312,103 +298,72 @@ class HeartRateRunnerView extends Ui.DataField {
     //! @author Roelof Koelewijn
     //function for arc
 	function drawZoneBarsArcs(dc, radius, centerX, centerY, hr){
-		var angle;
-		var lessAngle;
 		
-		var zone1CircleWidth = 7;
-		var zone2CircleWidth = 7;
-		var zone3CircleWidth = 7;
-		var zone4CircleWidth = 7;
-		var zone5CircleWidth = 7;
+		var zoneCircleWidth = [7, 7, 7, 7, 7, 7];
 		
-		var zone1 = maxHr * 0.64; 
-	    var zone2 = maxHr * 0.72; 
-	    var zone3 = maxHr * 0.79; 
-	    var zone4 = maxHr * 0.87;
-	    var zone5 = maxHr * 0.94;
-	    var hrmax = maxHr;
-	    
-	    var zonedegree = 54 / (zone2 - zone1); //3.9
-		
-		if(hr >= zone1 && hr < zone2){
-			zone1CircleWidth = 15;
-			zonedegree = 54 / (zone2 - zone1);
-			zonedegree = zonedegree * (zone2-hr);
-		}else if(hr >= zone2 && hr < zone3){
-			zone2CircleWidth = 15;
-			zonedegree = 54 / (zone3 - zone2);
-			zonedegree = zonedegree * (zone3-hr);
-		}else if(hr >= zone3 && hr < zone4){
-			zonedegree = 54 / (zone4 - zone3);
-			zone3CircleWidth = 15;
-			zonedegree = zonedegree * (zone4-hr);
-		}else if(hr >= zone4 && hr < zone5){
-			zonedegree = 54 / (zone5 - zone4);
-			zone4CircleWidth = 15;
-			zonedegree = zonedegree * (zone5-hr);
-		}else if(hr >= zone5){
-			zonedegree = 54 / (hrmax - zone5);
-			zone5CircleWidth = 15;
-			zonedegree = zonedegree * (hrmax-hr);
+		var i;	
+		for (i = 0; i < zoneLowerBound.size() && hr > zoneLowerBound[i]; ++i) { }
+		if(i >= 0){
+			zoneCircleWidth[i] = 15;
 		}
-				
+		
+		var zonedegree = 54 / (zoneLowerBound[1] - zoneLowerBound[0]);
+		
 		//zone 1
 		dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
-		dc.setPenWidth(zone1CircleWidth);
-		dc.drawArc(centerX, centerY, radius - zone1CircleWidth/2, 1, 220, 166);
-		if(hr >= zone1 && hr < zone2){
+		dc.setPenWidth(zoneCircleWidth[1]);
+		dc.drawArc(centerX, centerY, radius - zoneCircleWidth[1]/2, 1, 220, 166);
+		//zone 2
+		dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_TRANSPARENT);
+		dc.setPenWidth(zoneCircleWidth[2]);
+		dc.drawArc(centerX, centerY, radius - zoneCircleWidth[2]/2, 1, 166, 112);
+		//zone 3 OK
+		dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_TRANSPARENT);
+		dc.setPenWidth(zoneCircleWidth[3]);
+		dc.drawArc(centerX, centerY, radius - zoneCircleWidth[3]/2, 1, 112, 58);
+		//zone 4
+		dc.setColor(Graphics.COLOR_ORANGE, Graphics.COLOR_TRANSPARENT);
+		dc.setPenWidth(zoneCircleWidth[4]);
+		dc.drawArc(centerX, centerY, radius - zoneCircleWidth[4]/2, 1, 58, 4);
+		//zone 5
+		dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_TRANSPARENT);
+		dc.setPenWidth(zoneCircleWidth[5]);
+		dc.drawArc(centerX, centerY, radius - zoneCircleWidth[5]/2, 1, 4, 320);
+		
+		if(hr >= zoneLowerBound[0] && hr < zoneLowerBound[1]){
+			zonedegree = (54 / (zoneLowerBound[1] - zoneLowerBound[0])) * (zoneLowerBound[1]-hr);
 			dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
 			dc.setPenWidth(20);
 			dc.drawArc(centerX, centerY, radius - 8, 0, 166 + zonedegree - 3, 166 + zonedegree + 1);
 			dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
 			dc.setPenWidth(17);
 			dc.drawArc(centerX, centerY, radius - 8, 0, 166 + zonedegree - 2, 166 + zonedegree);
-		}
-		
-		//zone 2
-		dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_TRANSPARENT);
-		dc.setPenWidth(zone2CircleWidth);
-		dc.drawArc(centerX, centerY, radius - zone2CircleWidth/2, 1, 166, 112);
-		if(hr >= zone2 && hr < zone3){
+		}else if(hr >= zoneLowerBound[1] && hr < zoneLowerBound[2]){
+			zonedegree = (54 / (zoneLowerBound[2] - zoneLowerBound[1])) * (zoneLowerBound[2]-hr);
 			dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
 			dc.setPenWidth(20);
 			dc.drawArc(centerX, centerY, radius - 8, 0, 112 + zonedegree - 3, 112 + zonedegree + 1);
 			dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
 			dc.setPenWidth(17);
 			dc.drawArc(centerX, centerY, radius - 8, 0, 112 + zonedegree -2, 112 + zonedegree);
-		}
-		
-		//zone 3 OK
-		dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_TRANSPARENT);
-		dc.setPenWidth(zone3CircleWidth);
-		dc.drawArc(centerX, centerY, radius - zone3CircleWidth/2, 1, 112, 58);
-		if(hr >= zone3 && hr < zone4){
+		}else if(hr >= zoneLowerBound[2] && hr < zoneLowerBound[3]){
+			zonedegree = (54 / (zoneLowerBound[3] - zoneLowerBound[2])) * (zoneLowerBound[3]-hr);
 			dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
 			dc.setPenWidth(20);
 			dc.drawArc(centerX, centerY, radius - 8, 0, 58 + zonedegree - 3, 58 + zonedegree + 1);
 			dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
 			dc.setPenWidth(17);
 			dc.drawArc(centerX, centerY, radius - 8, 0, 58 + zonedegree - 2, 58 + zonedegree);
-		}
-		
-		//zone 4
-		dc.setColor(Graphics.COLOR_ORANGE, Graphics.COLOR_TRANSPARENT);
-		dc.setPenWidth(zone4CircleWidth);
-		dc.drawArc(centerX, centerY, radius - zone4CircleWidth/2, 1, 58, 4);
-		if(hr >= zone4 && hr < zone5){
+		}else if(hr >= zoneLowerBound[3] && hr < zoneLowerBound[4]){
+			zonedegree = (54 / (zoneLowerBound[4] - zoneLowerBound[3])) * (zoneLowerBound[4]-hr);
 			dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
 			dc.setPenWidth(20);
 			dc.drawArc(centerX, centerY, radius - 8, 0, 4 + zonedegree - 3, 4 + zonedegree + 1);
 			dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
 			dc.setPenWidth(17);
 			dc.drawArc(centerX, centerY, radius - 8, 0, 4 + zonedegree - 2, 4 + zonedegree);
-		}
-		
-		//zone 5
-		dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_TRANSPARENT);
-		dc.setPenWidth(zone5CircleWidth);
-		dc.drawArc(centerX, centerY, radius - zone5CircleWidth/2, 1, 4, 320);
-		if(hr >= zone5){
+		}else if(hr >= zoneLowerBound[4] && hr < maxHr){
+			zonedegree = (54 / (maxHr - zoneLowerBound[4])) * (maxHr-hr);
 			dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
 			dc.setPenWidth(20);
 			if((320 + zonedegree) < 360){
@@ -425,29 +380,7 @@ class HeartRateRunnerView extends Ui.DataField {
 			}
 		}
 		
-		//! @author Roelof Koelewijn
-		//function for arrow
-		//position 1 - zone 1 (14)
-		//fillPolygon(dc, 40, 170, 2.5, [[1,1], [1,16], [20,8]]);
-		//position 14 - zone 1 (14)
-		//fillPolygon(dc, 16, 103, 3.5, [[1,1], [1,16], [20,8]]);
-	}
-	
-	//! @author Roelof Koelewijn
-	//function for arrow
-	function fillPolygon(dc, dx, dy, theta, points) {
-	    var sin = Math.sin(theta);
-	    var cos = Math.cos(theta);
-	
-	    for (var i = 0; i < points.size(); ++i) {
-	        var x = (points[i][0] * cos) - (points[i][1] * sin) + dx;
-	        var y = (points[i][0] * sin) + (points[i][1] * cos) + dy;
-	
-	        points[i][0] = x;
-	        points[i][1] = y;
-	    }
-		dc.setColor(Graphics.COLOR_PINK, Graphics.COLOR_TRANSPARENT);
-	    dc.fillPolygon(points);
+		return i;
 	}
 }
 

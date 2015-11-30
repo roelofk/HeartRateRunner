@@ -7,294 +7,250 @@
 <entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="57" pc="268435521" symbol="initialize"/>
 <entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="58" pc="268435538" symbol="initialize"/>
 <entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="59" pc="268435597" symbol="initialize"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="64" pc="268435622" symbol="compute"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="65" pc="268435635" symbol="compute"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="67" pc="268435664" symbol="compute"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="70" pc="268435682" symbol="compute"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="71" pc="268435719" symbol="compute"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="72" pc="268435756" symbol="compute"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="73" pc="268435793" symbol="compute"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="74" pc="268435830" symbol="compute"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="78" pc="268435849" symbol="onLayout"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="79" pc="268435861" symbol="onLayout"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="83" pc="268435878" symbol="onUpdate"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="85" pc="268435890" symbol="onUpdate"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="86" pc="268435903" symbol="onUpdate"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="87" pc="268435916" symbol="onUpdate"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="88" pc="268435944" symbol="onUpdate"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="90" pc="268435970" symbol="onUpdate"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="94" pc="268435987" symbol="setDeviceSettingsDependentVariables"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="96" pc="268436003" symbol="setDeviceSettingsDependentVariables"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="97" pc="268436032" symbol="setDeviceSettingsDependentVariables"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="98" pc="268436056" symbol="setDeviceSettingsDependentVariables"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="100" pc="268436072" symbol="setDeviceSettingsDependentVariables"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="102" pc="268436085" symbol="setDeviceSettingsDependentVariables"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="104" pc="268436114" symbol="setDeviceSettingsDependentVariables"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="105" pc="268436157" symbol="setDeviceSettingsDependentVariables"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="106" pc="268436200" symbol="setDeviceSettingsDependentVariables"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="107" pc="268436243" symbol="setDeviceSettingsDependentVariables"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="108" pc="268436286" symbol="setDeviceSettingsDependentVariables"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="112" pc="268436332" symbol="setColors"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="113" pc="268436343" symbol="setColors"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="114" pc="268436362" symbol="setColors"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="115" pc="268436421" symbol="setColors"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="116" pc="268436480" symbol="setColors"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="117" pc="268436539" symbol="setColors"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="118" pc="268436598" symbol="setColors"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="119" pc="268436657" symbol="setColors"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="125" pc="268436722" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="126" pc="268436739" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="127" pc="268436739" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="128" pc="268436750" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="129" pc="268436826" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="131" pc="268436836" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="132" pc="268436923" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="136" pc="268436955" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="137" pc="268436987" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="140" pc="268437047" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="141" pc="268437079" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="144" pc="268437143" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="145" pc="268437175" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="148" pc="268437232" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="149" pc="268437232" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="150" pc="268437249" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="151" pc="268437268" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="152" pc="268437279" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="154" pc="268437300" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="157" pc="268437321" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="159" pc="268437331" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="162" pc="268437371" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="163" pc="268437371" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="164" pc="268437404" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="165" pc="268437407" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="166" pc="268437429" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="168" pc="268437451" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="169" pc="268437462" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="170" pc="268437472" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="173" pc="268437485" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="174" pc="268437492" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="176" pc="268437536" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="179" pc="268437603" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="181" pc="268437613" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="184" pc="268437653" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="185" pc="268437681" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="188" pc="268437713" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="189" pc="268437745" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="191" pc="268437785" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="194" pc="268437840" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="195" pc="268437857" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="197" pc="268437925" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="199" pc="268437993" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="201" pc="268438044" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="205" pc="268438092" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="206" pc="268438124" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="207" pc="268438170" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="208" pc="268438216" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="209" pc="268438262" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="212" pc="268438308" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="213" pc="268438344" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="214" pc="268438361" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="217" pc="268438399" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="218" pc="268438412" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="219" pc="268438425" symbol="drawValues"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="223" pc="268438480" symbol="drawBattery"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="224" pc="268438508" symbol="drawBattery"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="225" pc="268438528" symbol="drawBattery"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="226" pc="268438539" symbol="drawBattery"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="227" pc="268438575" symbol="drawBattery"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="230" pc="268438677" symbol="drawBattery"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="231" pc="268438688" symbol="drawBattery"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="233" pc="268438738" symbol="drawBattery"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="235" pc="268438777" symbol="drawBattery"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="237" pc="268438809" symbol="drawBattery"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="239" pc="268438862" symbol="drawBattery"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="240" pc="268438890" symbol="drawBattery"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="244" pc="268438937" symbol="drawGpsSign"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="245" pc="268438973" symbol="drawGpsSign"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="246" pc="268438990" symbol="drawGpsSign"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="247" pc="268439028" symbol="drawGpsSign"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="248" pc="268439054" symbol="drawGpsSign"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="249" pc="268439071" symbol="drawGpsSign"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="251" pc="268439103" symbol="drawGpsSign"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="252" pc="268439139" symbol="drawGpsSign"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="253" pc="268439156" symbol="drawGpsSign"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="254" pc="268439194" symbol="drawGpsSign"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="255" pc="268439220" symbol="drawGpsSign"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="256" pc="268439237" symbol="drawGpsSign"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="258" pc="268439275" symbol="drawGpsSign"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="259" pc="268439311" symbol="drawGpsSign"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="260" pc="268439328" symbol="drawGpsSign"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="261" pc="268439366" symbol="drawGpsSign"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="262" pc="268439392" symbol="drawGpsSign"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="263" pc="268439409" symbol="drawGpsSign"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="267" pc="268439450" symbol="computeAverageSpeed"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="268" pc="268439457" symbol="computeAverageSpeed"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="269" pc="268439476" symbol="computeAverageSpeed"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="270" pc="268439483" symbol="computeAverageSpeed"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="271" pc="268439507" symbol="computeAverageSpeed"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="272" pc="268439517" symbol="computeAverageSpeed"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="273" pc="268439527" symbol="computeAverageSpeed"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="276" pc="268439553" symbol="computeAverageSpeed"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="277" pc="268439564" symbol="computeAverageSpeed"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="279" pc="268439573" symbol="computeAverageSpeed"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="283" pc="268439582" symbol="computeHour"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="284" pc="268439593" symbol="computeHour"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="286" pc="268439605" symbol="computeHour"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="287" pc="268439616" symbol="computeHour"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="289" pc="268439628" symbol="computeHour"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="294" pc="268439634" symbol="toNumberCeil"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="295" pc="268439647" symbol="toNumberCeil"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="296" pc="268439661" symbol="toNumberCeil"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="298" pc="268439673" symbol="toNumberCeil"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="302" pc="268439679" symbol="getMinutesPerKmOrMile"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="303" pc="268439700" symbol="getMinutesPerKmOrMile"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="304" pc="268439710" symbol="getMinutesPerKmOrMile"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="305" pc="268439723" symbol="getMinutesPerKmOrMile"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="306" pc="268439736" symbol="getMinutesPerKmOrMile"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="307" pc="268439749" symbol="getMinutesPerKmOrMile"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="309" pc="268439792" symbol="getMinutesPerKmOrMile"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="315" pc="268439804" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="316" pc="268439804" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="318" pc="268439804" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="319" pc="268439811" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="320" pc="268439818" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="321" pc="268439825" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="322" pc="268439832" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="324" pc="268439839" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="325" pc="268439855" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="326" pc="268439871" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="327" pc="268439887" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="328" pc="268439903" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="329" pc="268439919" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="331" pc="268439929" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="333" pc="268439942" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="334" pc="268439961" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="335" pc="268439968" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="336" pc="268439981" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="338" pc="268440013" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="339" pc="268440020" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="340" pc="268440033" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="342" pc="268440065" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="343" pc="268440078" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="344" pc="268440085" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="346" pc="268440117" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="347" pc="268440130" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="348" pc="268440137" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="350" pc="268440158" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="351" pc="268440171" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="352" pc="268440178" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="356" pc="268440191" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="357" pc="268440227" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="358" pc="268440241" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="359" pc="268440283" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="360" pc="268440302" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="361" pc="268440338" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="362" pc="268440355" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="363" pc="268440412" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="364" pc="268440448" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="365" pc="268440465" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="369" pc="268440519" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="370" pc="268440555" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="371" pc="268440569" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="372" pc="268440611" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="373" pc="268440630" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="374" pc="268440666" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="375" pc="268440683" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="376" pc="268440740" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="377" pc="268440776" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="378" pc="268440793" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="382" pc="268440847" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="383" pc="268440883" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="384" pc="268440897" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="385" pc="268440939" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="386" pc="268440958" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="387" pc="268440994" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="388" pc="268441011" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="389" pc="268441068" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="390" pc="268441104" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="391" pc="268441121" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="395" pc="268441175" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="396" pc="268441211" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="397" pc="268441225" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="398" pc="268441267" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="399" pc="268441286" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="400" pc="268441322" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="401" pc="268441339" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="402" pc="268441396" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="403" pc="268441432" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="404" pc="268441449" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="408" pc="268441503" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="409" pc="268441539" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="410" pc="268441553" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="411" pc="268441595" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="412" pc="268441603" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="413" pc="268441639" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="414" pc="268441656" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="415" pc="268441673" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="417" pc="268441733" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="419" pc="268441802" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="420" pc="268441838" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="421" pc="268441855" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="422" pc="268441872" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="424" pc="268441926" symbol="drawZoneBarsArcs"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="439" pc="268441995" symbol="fillPolygon"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="440" pc="268442016" symbol="fillPolygon"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="442" pc="268442037" symbol="fillPolygon"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="443" pc="268442061" symbol="fillPolygon"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="444" pc="268442095" symbol="fillPolygon"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="446" pc="268442129" symbol="fillPolygon"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="447" pc="268442142" symbol="fillPolygon"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="449" pc="268442168" symbol="fillPolygon"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="450" pc="268442204" symbol="fillPolygon"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="24" pc="268442685" symbol="&lt;init&gt;"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="25" pc="268442718" symbol="&lt;init&gt;"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="26" pc="268442738" symbol="&lt;init&gt;"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="31" pc="268442758" symbol="&lt;init&gt;"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="32" pc="268442768" symbol="&lt;init&gt;"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="33" pc="268442788" symbol="&lt;init&gt;"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="34" pc="268442808" symbol="&lt;init&gt;"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="35" pc="268442828" symbol="&lt;init&gt;"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="36" pc="268442848" symbol="&lt;init&gt;"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="37" pc="268442868" symbol="&lt;init&gt;"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="38" pc="268442888" symbol="&lt;init&gt;"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="39" pc="268442908" symbol="&lt;init&gt;"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="40" pc="268442928" symbol="&lt;init&gt;"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="41" pc="268442948" symbol="&lt;init&gt;"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="45" pc="268442968" symbol="&lt;init&gt;"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="53" pc="268443003" symbol="&lt;init&gt;"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="465" pc="268442221" symbol="initialize"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="466" pc="268442232" symbol="initialize"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="471" pc="268442245" symbol="add"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="472" pc="268442264" symbol="add"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="477" pc="268442298" symbol="reset"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="478" pc="268442328" symbol="reset"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="480" pc="268442353" symbol="reset"/>
-<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="485" pc="268442369" symbol="getData"/>
-<entry filename="Rez" lineNum="5" pc="268442431" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="6" pc="268442440" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="7" pc="268442449" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="8" pc="268442458" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="9" pc="268442467" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="10" pc="268442476" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="11" pc="268442485" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="12" pc="268442494" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="13" pc="268442503" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="14" pc="268442512" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="15" pc="268442521" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="16" pc="268442530" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="17" pc="268442539" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="18" pc="268442548" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="19" pc="268442557" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="20" pc="268442566" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="21" pc="268442575" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="22" pc="268442584" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="23" pc="268442593" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="24" pc="268442602" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="25" pc="268442611" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="26" pc="268442620" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="27" pc="268442629" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="28" pc="268442638" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="33" pc="268442418" symbol="&lt;init&gt;"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="60" pc="268435619" symbol="initialize"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="65" pc="268435746" symbol="compute"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="66" pc="268435759" symbol="compute"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="68" pc="268435788" symbol="compute"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="71" pc="268435806" symbol="compute"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="72" pc="268435843" symbol="compute"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="73" pc="268435880" symbol="compute"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="74" pc="268435917" symbol="compute"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="75" pc="268435954" symbol="compute"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="76" pc="268435967" symbol="compute"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="77" pc="268435980" symbol="compute"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="78" pc="268436013" symbol="compute"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="79" pc="268436043" symbol="compute"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="80" pc="268436060" symbol="compute"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="87" pc="268436097" symbol="getZoneIdForHr"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="88" pc="268436097" symbol="getZoneIdForHr"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="89" pc="268436160" symbol="getZoneIdForHr"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="93" pc="268436166" symbol="onLayout"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="94" pc="268436178" symbol="onLayout"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="98" pc="268436195" symbol="onUpdate"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="100" pc="268436207" symbol="onUpdate"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="101" pc="268436220" symbol="onUpdate"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="102" pc="268436233" symbol="onUpdate"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="103" pc="268436261" symbol="onUpdate"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="105" pc="268436287" symbol="onUpdate"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="109" pc="268436304" symbol="setDeviceSettingsDependentVariables"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="111" pc="268436320" symbol="setDeviceSettingsDependentVariables"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="112" pc="268436349" symbol="setDeviceSettingsDependentVariables"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="113" pc="268436373" symbol="setDeviceSettingsDependentVariables"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="115" pc="268436389" symbol="setDeviceSettingsDependentVariables"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="117" pc="268436402" symbol="setDeviceSettingsDependentVariables"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="119" pc="268436431" symbol="setDeviceSettingsDependentVariables"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="120" pc="268436474" symbol="setDeviceSettingsDependentVariables"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="121" pc="268436517" symbol="setDeviceSettingsDependentVariables"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="122" pc="268436560" symbol="setDeviceSettingsDependentVariables"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="123" pc="268436603" symbol="setDeviceSettingsDependentVariables"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="127" pc="268436649" symbol="setColors"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="128" pc="268436660" symbol="setColors"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="129" pc="268436679" symbol="setColors"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="130" pc="268436738" symbol="setColors"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="131" pc="268436797" symbol="setColors"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="132" pc="268436856" symbol="setColors"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="133" pc="268436915" symbol="setColors"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="138" pc="268436980" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="139" pc="268436993" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="142" pc="268437006" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="143" pc="268437023" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="144" pc="268437023" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="145" pc="268437034" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="146" pc="268437110" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="148" pc="268437120" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="149" pc="268437207" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="153" pc="268437239" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="154" pc="268437271" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="157" pc="268437331" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="158" pc="268437363" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="161" pc="268437420" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="162" pc="268437420" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="163" pc="268437437" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="164" pc="268437456" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="165" pc="268437467" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="167" pc="268437488" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="170" pc="268437509" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="172" pc="268437519" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="175" pc="268437559" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="176" pc="268437559" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="177" pc="268437592" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="178" pc="268437595" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="179" pc="268437617" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="181" pc="268437639" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="182" pc="268437650" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="183" pc="268437660" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="186" pc="268437673" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="187" pc="268437680" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="189" pc="268437724" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="192" pc="268437791" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="194" pc="268437801" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="197" pc="268437841" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="198" pc="268437869" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="201" pc="268437898" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="203" pc="268437934" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="206" pc="268437998" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="207" pc="268438030" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="211" pc="268438070" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="212" pc="268438102" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="213" pc="268438119" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="216" pc="268438166" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="219" pc="268438219" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="220" pc="268438219" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="221" pc="268438290" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="222" pc="268438293" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="223" pc="268438318" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="225" pc="268438337" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="226" pc="268438348" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="227" pc="268438358" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="230" pc="268438371" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="231" pc="268438378" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="233" pc="268438422" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="235" pc="268438486" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="236" pc="268438518" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="238" pc="268438565" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="242" pc="268438575" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="243" pc="268438607" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="244" pc="268438653" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="245" pc="268438699" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="246" pc="268438745" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="247" pc="268438791" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="248" pc="268438802" symbol="drawValues"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="253" pc="268438869" symbol="computeAverageSpeed"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="254" pc="268438876" symbol="computeAverageSpeed"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="255" pc="268438895" symbol="computeAverageSpeed"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="256" pc="268438902" symbol="computeAverageSpeed"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="257" pc="268438926" symbol="computeAverageSpeed"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="258" pc="268438936" symbol="computeAverageSpeed"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="259" pc="268438946" symbol="computeAverageSpeed"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="262" pc="268438972" symbol="computeAverageSpeed"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="263" pc="268438983" symbol="computeAverageSpeed"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="265" pc="268438992" symbol="computeAverageSpeed"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="269" pc="268439001" symbol="computeHour"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="270" pc="268439012" symbol="computeHour"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="272" pc="268439024" symbol="computeHour"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="273" pc="268439035" symbol="computeHour"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="275" pc="268439047" symbol="computeHour"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="280" pc="268439053" symbol="toNumberCeil"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="281" pc="268439066" symbol="toNumberCeil"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="282" pc="268439080" symbol="toNumberCeil"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="284" pc="268439092" symbol="toNumberCeil"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="288" pc="268439098" symbol="getMinutesPerKmOrMile"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="289" pc="268439119" symbol="getMinutesPerKmOrMile"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="290" pc="268439129" symbol="getMinutesPerKmOrMile"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="291" pc="268439142" symbol="getMinutesPerKmOrMile"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="292" pc="268439155" symbol="getMinutesPerKmOrMile"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="293" pc="268439168" symbol="getMinutesPerKmOrMile"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="295" pc="268439211" symbol="getMinutesPerKmOrMile"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="302" pc="268439223" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="304" pc="268439309" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="305" pc="268439309" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="306" pc="268439372" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="307" pc="268439383" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="310" pc="268439396" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="313" pc="268439433" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="314" pc="268439469" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="315" pc="268439489" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="317" pc="268439537" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="318" pc="268439573" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="319" pc="268439593" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="321" pc="268439641" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="322" pc="268439677" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="323" pc="268439697" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="325" pc="268439745" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="326" pc="268439781" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="327" pc="268439801" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="329" pc="268439849" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="330" pc="268439885" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="331" pc="268439905" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="333" pc="268439953" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="334" pc="268439996" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="335" pc="268440051" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="336" pc="268440087" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="337" pc="268440104" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="338" pc="268440161" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="339" pc="268440197" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="340" pc="268440214" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="342" pc="268440311" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="343" pc="268440366" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="344" pc="268440402" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="345" pc="268440419" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="346" pc="268440476" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="347" pc="268440512" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="348" pc="268440529" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="350" pc="268440626" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="351" pc="268440681" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="352" pc="268440717" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="353" pc="268440734" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="354" pc="268440791" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="355" pc="268440827" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="356" pc="268440844" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="358" pc="268440941" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="359" pc="268440996" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="360" pc="268441032" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="361" pc="268441049" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="362" pc="268441106" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="363" pc="268441142" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="364" pc="268441159" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="366" pc="268441250" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="367" pc="268441293" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="368" pc="268441329" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="369" pc="268441346" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="370" pc="268441363" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="372" pc="268441423" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="374" pc="268441492" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="375" pc="268441528" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="376" pc="268441545" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="377" pc="268441562" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="379" pc="268441616" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="383" pc="268441682" symbol="drawZoneBarsArcs"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="24" pc="268442152" symbol="&lt;init&gt;"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="25" pc="268442185" symbol="&lt;init&gt;"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="26" pc="268442205" symbol="&lt;init&gt;"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="31" pc="268442225" symbol="&lt;init&gt;"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="32" pc="268442235" symbol="&lt;init&gt;"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="33" pc="268442255" symbol="&lt;init&gt;"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="34" pc="268442275" symbol="&lt;init&gt;"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="35" pc="268442295" symbol="&lt;init&gt;"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="36" pc="268442315" symbol="&lt;init&gt;"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="37" pc="268442335" symbol="&lt;init&gt;"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="38" pc="268442355" symbol="&lt;init&gt;"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="42" pc="268442375" symbol="&lt;init&gt;"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="50" pc="268442410" symbol="&lt;init&gt;"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="51" pc="268442502" symbol="&lt;init&gt;"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="53" pc="268442581" symbol="&lt;init&gt;"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="398" pc="268441688" symbol="initialize"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="399" pc="268441699" symbol="initialize"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="404" pc="268441712" symbol="add"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="405" pc="268441731" symbol="add"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="410" pc="268441765" symbol="reset"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="411" pc="268441795" symbol="reset"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="413" pc="268441820" symbol="reset"/>
+<entry filename="/Users/Roelof/eclipse/workspace/HeartRateRunner/source/HeartRateRunner.mc" lineNum="418" pc="268441836" symbol="getData"/>
+<entry filename="Rez" lineNum="5" pc="268441898" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="6" pc="268441907" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="7" pc="268441916" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="8" pc="268441925" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="9" pc="268441934" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="10" pc="268441943" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="11" pc="268441952" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="12" pc="268441961" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="13" pc="268441970" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="14" pc="268441979" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="15" pc="268441988" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="16" pc="268441997" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="17" pc="268442006" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="18" pc="268442015" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="19" pc="268442024" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="20" pc="268442033" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="21" pc="268442042" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="22" pc="268442051" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="23" pc="268442060" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="24" pc="268442069" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="25" pc="268442078" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="26" pc="268442087" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="27" pc="268442096" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="28" pc="268442105" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="33" pc="268441885" symbol="&lt;init&gt;"/>
 </pcToLineNum>
 <symbolTable>
 <entry id="8389359" symbol="&lt;gre&gt;"/>
@@ -309,7 +265,7 @@
 <entry field="true" id="8388737" symbol="calories"/>
 <entry field="true" id="8389205" symbol="MSG_ID_CHANNEL_TRANSMIT_POWER"/>
 <entry id="8389060" object="true" symbol="Text"/>
-<entry id="39" symbol="avgPaceStr"/>
+<entry id="36" symbol="avgPaceStr"/>
 <entry id="8389051" method="true" symbol="switchToView"/>
 <entry id="8388638" module="true" symbol="ActivityRecording"/>
 <entry id="8388635" module="true" symbol="Application"/>
@@ -354,7 +310,6 @@
 <entry id="8388821" method="true" symbol="getMailbox"/>
 <entry id="8388957" method="true" symbol="enableSensorEvents"/>
 <entry field="true" id="8388811" symbol="INVALID_HTTP_BODY_IN_REQUEST"/>
-<entry id="35" symbol="batteryColor1"/>
 <entry field="true" id="8388750" symbol="currentCadence"/>
 <entry id="8388629" module="true" symbol="Toybox_Application"/>
 <entry field="true" id="8389649" symbol="activityTrackingOn"/>
@@ -366,7 +321,7 @@
 <entry id="8388663" method="true" symbol="testAdd"/>
 <entry id="8389661" symbol="maxWidth"/>
 <entry id="8389119" method="true" symbol="getDirection"/>
-<entry id="45" symbol="gpsSignal"/>
+<entry id="42" symbol="gpsSignal"/>
 <entry field="true" id="8389475" symbol="rightPedalSmoothness"/>
 <entry id="8389101" method="true" symbol="onSwipe"/>
 <entry id="8389247" symbol="measurementType"/>
@@ -396,6 +351,7 @@
 <entry field="true" id="8389638" symbol="NETWORK_KEY_LENGTH_128BIT"/>
 <entry id="8389069" method="true" symbol="setLocation"/>
 <entry id="8389363" symbol="&lt;nob&gt;"/>
+<entry id="46" symbol="zoneLowerBound"/>
 <entry id="8388659" method="true" symbol="testAbs"/>
 <entry field="true" id="8388989" symbol="dutyCycle"/>
 <entry id="8389043" object="true" symbol="ProgressBar"/>
@@ -440,7 +396,6 @@
 <entry id="8389118" symbol="mDirection"/>
 <entry field="true" id="8389103" symbol="behavior"/>
 <entry id="8389252" method="true" symbol="setPayload"/>
-<entry id="33" symbol="inactiveGpsBackground"/>
 <entry id="8389108" method="true" symbol="onResponse"/>
 <entry field="true" id="8389506" symbol="age"/>
 <entry field="true" id="8389503" symbol="pedalPowerPercent"/>
@@ -652,7 +607,7 @@
 <entry field="true" id="8389159" symbol="COLOR_DK_GRAY"/>
 <entry id="8389375" object="true" symbol="WatchFace"/>
 <entry field="true" id="8389498" symbol="bodyWeight"/>
-<entry id="40" symbol="hrStr"/>
+<entry id="37" symbol="hrStr"/>
 <entry id="8389435" object="true" symbol="CalculatedWheelDistance"/>
 <entry field="true" id="8389442" symbol="WEIGHT_SCALE_GENDER_FEMALE"/>
 <entry field="true" id="8389561" symbol="KEY_SPORT"/>
@@ -675,7 +630,7 @@
 <entry id="8389602" method="true" symbol="deleteAll"/>
 <entry id="8388925" symbol="monthHash"/>
 <entry id="8388643" module="true" symbol="Sensor"/>
-<entry id="53" method="true" symbol="computeAverageSpeed"/>
+<entry id="52" method="true" symbol="computeAverageSpeed"/>
 <entry id="8388987" method="true" symbol="vibrate"/>
 <entry id="8388905" method="true" symbol="tan"/>
 <entry id="8388766" object="true" symbol="Array"/>
@@ -724,7 +679,7 @@
 <entry field="true" id="8389499" symbol="boneMass"/>
 <entry field="true" id="8388835" symbol="SPORT_SWIMMING"/>
 <entry id="8388796" method="true" symbol="find"/>
-<entry id="38" symbol="paceStr"/>
+<entry id="35" symbol="paceStr"/>
 <entry field="true" id="8388914" symbol="moveBarLevel"/>
 <entry field="true" id="8389202" symbol="MSG_ID_CHANNEL_RF_FREQUENCY"/>
 <entry id="8388933" method="true" symbol="moment"/>
@@ -760,10 +715,11 @@
 <entry id="8388826" method="true" symbol="next"/>
 <entry id="8389587" method="true" symbol="getErrorMessage"/>
 <entry id="8388792" method="true" symbol="isEmpty"/>
-<entry id="44" symbol="avgSpeed"/>
+<entry id="41" symbol="avgSpeed"/>
 <entry id="8389357" symbol="&lt;fre&gt;"/>
 <entry field="true" id="8389495" symbol="activeMetabolicRate"/>
 <entry field="true" id="8388998" symbol="KEY_DOWN"/>
+<entry id="48" symbol="getZoneIdForHr"/>
 <entry field="true" id="8389407" symbol="temperatureUnits"/>
 <entry field="true" id="8389524" symbol="swRevisionSupplemental"/>
 <entry field="true" id="8388851" symbol="SUB_SPORT_TREADMILL"/>
@@ -809,7 +765,7 @@
 <entry id="8389304" method="true" symbol="testInfoString"/>
 <entry field="true" id="8388839" symbol="SPORT_AMERICAN_FOOTBALL"/>
 <entry id="8388778" symbol="mClass"/>
-<entry id="54" method="true" symbol="computeHour"/>
+<entry id="53" method="true" symbol="computeHour"/>
 <entry id="8388934" method="true" symbol="momentNative"/>
 <entry field="true" id="8389000" symbol="KEY_DOWN_RIGHT"/>
 <entry id="8388641" module="true" symbol="Math"/>
@@ -860,7 +816,7 @@
 <entry id="8388617" module="true" symbol="Toybox_ActivityRecording"/>
 <entry id="8388986" object="true" symbol="VibeProfile"/>
 <entry id="8389014" object="true" symbol="ClickEvent"/>
-<entry id="50" method="true" symbol="drawValues"/>
+<entry id="51" method="true" symbol="drawValues"/>
 <entry field="true" id="8388732" symbol="elapsedTime"/>
 <entry field="true" id="8389636" symbol="DEFAULT_NETWORK_KEY"/>
 <entry id="8389256" method="true" symbol="open"/>
@@ -886,7 +842,7 @@
 <entry id="8388741" symbol="currentPace"/>
 <entry field="true" id="8389415" symbol="BATT_STATUS_CRITICAL"/>
 <entry id="8389058" object="true" symbol="Drawable"/>
-<entry id="43" symbol="paceData"/>
+<entry id="40" symbol="paceData"/>
 <entry field="true" id="8389013" symbol="CLICK_TYPE_RELEASE"/>
 <entry field="true" id="8389077" symbol="BEHAVIOR_ON_PREVIOUS_MODE"/>
 <entry id="8389319" symbol="january"/>
@@ -939,7 +895,7 @@
 <entry field="true" id="8389505" symbol="userProfileId"/>
 <entry id="8388679" method="true" symbol="testObjectLock"/>
 <entry id="8389095" method="true" symbol="addItem"/>
-<entry id="49" method="true" symbol="setColors"/>
+<entry id="50" method="true" symbol="setColors"/>
 <entry field="true" id="8389157" symbol="COLOR_WHITE"/>
 <entry field="true" id="8389550" symbol="PRESS_TYPE_DOWN"/>
 <entry field="true" id="8389165" symbol="COLOR_GREEN"/>
@@ -977,7 +933,7 @@
 <entry field="true" id="8389215" symbol="MSG_CODE_RESPONSE_NO_ERROR"/>
 <entry id="8389477" symbol="mDeviceType"/>
 <entry id="8389242" symbol="dataHigh"/>
-<entry id="42" symbol="durationStr"/>
+<entry id="39" symbol="durationStr"/>
 <entry id="8388648" module="true" symbol="WatchUi"/>
 <entry id="24" symbol="HEADER_FONT"/>
 <entry field="true" id="8388843" symbol="SPORT_ALPINE_SKIING"/>
@@ -1017,13 +973,13 @@
 <entry id="8388715" method="true" symbol="getSystemStats"/>
 <entry id="8389516" method="true" symbol="getPedalPowerBalance"/>
 <entry id="8388624" module="true" symbol="Toybox_Attention"/>
-<entry id="37" symbol="headerColor"/>
+<entry id="34" symbol="headerColor"/>
 <entry field="true" id="8389017" symbol="SWIPE_DOWN"/>
 <entry id="8388656" object="true" symbol="InputDelegate"/>
 <entry field="true" id="8388720" symbol="hour"/>
 <entry id="25" symbol="VALUE_FONT"/>
 <entry id="8389134" method="true" symbol="setText"/>
-<entry id="57" method="true" symbol="drawZoneBarsArcs"/>
+<entry id="56" method="true" symbol="drawZoneBarsArcs"/>
 <entry id="8389255" method="true" symbol="setDeviceConfig"/>
 <entry id="8388909" method="true" symbol="getInfo"/>
 <entry field="true" id="8388874" symbol="SUB_SPORT_CHALLENGE"/>
@@ -1050,6 +1006,7 @@
 <entry id="8388691" object="true" symbol="TimerStop"/>
 <entry field="true" id="8388972" symbol="TONE_LOUD_BEEP"/>
 <entry field="true" id="8389140" symbol="GENDER_MALE"/>
+<entry id="33" symbol="lineColor"/>
 <entry id="8389539" symbol="mInitialText"/>
 <entry id="23" symbol="CENTER"/>
 <entry field="true" id="8388965" symbol="heading"/>
@@ -1067,7 +1024,6 @@
 <entry id="8389514" method="true" symbol="getCalculatedWheelDistance"/>
 <entry id="8388985" method="true" symbol="playTone"/>
 <entry field="true" id="8388736" symbol="currentLocation"/>
-<entry id="36" symbol="hrColor"/>
 <entry field="true" id="8388916" symbol="startOfDay"/>
 <entry field="true" id="8388752" symbol="maxCadence"/>
 <entry id="8389338" symbol="minute"/>
@@ -1154,7 +1110,7 @@
 <entry id="8389511" method="true" symbol="getCalculatedCrankCadence"/>
 <entry field="true" id="8388966" symbol="TONE_KEY"/>
 <entry field="true" id="8389220" symbol="MSG_CODE_EVENT_TRANSFER_TX_COMPLETED"/>
-<entry id="46" symbol="maxHr"/>
+<entry id="43" symbol="maxHr"/>
 <entry field="true" id="8389294" symbol="QUALITY_LAST_KNOWN"/>
 <entry id="8389258" method="true" symbol="release"/>
 <entry id="8389629" method="true" symbol="getValue"/>
@@ -1220,7 +1176,6 @@
 <entry field="true" id="8389379" symbol="OBSCURE_LEFT"/>
 <entry field="true" id="20" symbol="hr"/>
 <entry id="8388820" object="true" symbol="MailboxIterator"/>
-<entry id="52" method="true" symbol="drawGpsSign"/>
 <entry field="true" id="8388917" symbol="FORMAT_SHORT"/>
 <entry field="true" id="8389664" symbol="SCREEN_SHAPE_SEMI_ROUND"/>
 <entry id="8388791" method="true" symbol="remove"/>
@@ -1245,7 +1200,7 @@
 <entry id="8389373" symbol="&lt;jpn&gt;"/>
 <entry id="8388762" object="true" symbol="Boolean"/>
 <entry field="true" id="8389164" symbol="COLOR_YELLOW"/>
-<entry id="41" symbol="distanceStr"/>
+<entry id="38" symbol="distanceStr"/>
 <entry field="true" id="8388907" symbol="MOVE_BAR_LEVEL_MIN"/>
 <entry id="8388674" method="true" symbol="testGreaterThan"/>
 <entry id="8389120" symbol="mLayout"/>
@@ -1256,10 +1211,11 @@
 <entry id="8389626" method="true" symbol="onAccept"/>
 <entry id="8389356" symbol="&lt;fin&gt;"/>
 <entry id="8389276" object="true" symbol="AppBase"/>
-<entry id="51" method="true" symbol="drawBattery"/>
 <entry id="8389657" symbol="maxHeight"/>
 <entry id="8389698" object="true" symbol="UnableToAcquireChannelException"/>
+<entry id="45" symbol="secondsInZone"/>
 <entry id="8389510" symbol="DEVICE_TYPE_BIKE_POWER"/>
+<entry id="44" symbol="zoneId"/>
 <entry field="true" id="8389034" symbol="NUMBER_PICKER_TIME"/>
 <entry id="8388646" module="true" object="true" symbol="Timer"/>
 <entry id="8389517" method="true" symbol="getTorqueEfficiency"/>
@@ -1272,7 +1228,7 @@
 <entry field="true" id="8389162" symbol="COLOR_DK_RED"/>
 <entry id="8389512" method="true" symbol="getCalculatedPower"/>
 <entry field="true" id="8388872" symbol="SUB_SPORT_MATCH"/>
-<entry id="48" method="true" symbol="setDeviceSettingsDependentVariables"/>
+<entry id="49" method="true" symbol="setDeviceSettingsDependentVariables"/>
 <entry id="8389567" method="true" symbol="getNumberOfTests"/>
 <entry field="true" id="8389456" symbol="WEIGHT_SCALE_STATUS_SEARCHING"/>
 <entry id="8389600" method="true" symbol="getMaxEvents"/>
@@ -1292,7 +1248,7 @@
 <entry field="true" id="8389552" symbol="PRESS_TYPE_ACTION"/>
 <entry field="true" id="8389139" symbol="GENDER_FEMALE"/>
 <entry field="true" id="8389245" symbol="deviceType"/>
-<entry id="56" method="true" symbol="getMinutesPerKmOrMile"/>
+<entry id="55" method="true" symbol="getMinutesPerKmOrMile"/>
 <entry id="8389490" method="true" symbol="getBasicReading"/>
 <entry field="true" id="8389209" symbol="MSG_ID_RESET_SYSTEM"/>
 <entry field="true" id="8388873" symbol="SUB_SPORT_EXERCISE"/>
@@ -1345,7 +1301,6 @@
 <entry field="true" id="8389030" symbol="CONFIRM_YES"/>
 <entry id="8389545" symbol="mWidth"/>
 <entry field="true" id="8388753" symbol="swimStrokeType"/>
-<entry id="34" symbol="batteryBackground"/>
 <entry field="true" id="8388978" symbol="TONE_TIME_ALERT"/>
 <entry field="true" id="8389422" symbol="DEVICE_STATE_TRACKING"/>
 <entry field="true" id="8388795" method="true" symbol="length"/>
@@ -1375,7 +1330,7 @@
 <entry field="true" id="8389403" symbol="paceUnits"/>
 <entry id="8389341" symbol="days"/>
 <entry field="true" id="8388977" symbol="TONE_CANARY"/>
-<entry id="55" method="true" symbol="toNumberCeil"/>
+<entry id="54" method="true" symbol="toNumberCeil"/>
 <entry field="true" id="8388919" symbol="FORMAT_LONG"/>
 <entry field="true" id="8389459" symbol="WEIGHT_SCALE_STATUS_RECEIVING"/>
 <entry id="8388903" method="true" symbol="sqrt"/>
@@ -1413,50 +1368,40 @@
 </symbolTable>
 <localVars>
 <entry endPc="268435499" name="view" stackId="1" startPc="268435458"/>
-<entry endPc="268435619" name="profile" stackId="1" startPc="268435503"/>
-<entry endPc="268435619" name="userAge" stackId="2" startPc="268435503"/>
-<entry endPc="268435984" name="height" stackId="3" startPc="268435878"/>
-<entry endPc="268435984" name="width" stackId="2" startPc="268435878"/>
-<entry endPc="268437318" name="distanceKmOrMiles" stackId="6" startPc="268437249"/>
-<entry endPc="268437600" name="hours" stackId="8" startPc="268437404"/>
-<entry endPc="268437600" name="minutes" stackId="9" startPc="268437404"/>
-<entry endPc="268437600" name="seconds" stackId="10" startPc="268437404"/>
-<entry endPc="268438477" name="height" stackId="12" startPc="268436722"/>
-<entry endPc="268438477" name="ampm" stackId="4" startPc="268436722"/>
-<entry endPc="268438477" name="width" stackId="11" startPc="268436722"/>
-<entry endPc="268438477" name="clockTime" stackId="2" startPc="268436722"/>
-<entry endPc="268438477" name="duration" stackId="7" startPc="268436722"/>
-<entry endPc="268438477" name="time" stackId="3" startPc="268436722"/>
-<entry endPc="268438477" name="distStr" stackId="5" startPc="268436722"/>
-<entry endPc="268439553" name="i" stackId="4" startPc="268439507"/>
-<entry endPc="268439579" name="size" stackId="1" startPc="268439450"/>
-<entry endPc="268439579" name="data" stackId="2" startPc="268439450"/>
-<entry endPc="268439579" name="sumOfData" stackId="3" startPc="268439450"/>
-<entry endPc="268439676" name="floor" stackId="2" startPc="268439634"/>
-<entry endPc="268439789" name="minutesPerKmOrMilesFloor" stackId="4" startPc="268439700"/>
-<entry endPc="268439789" name="metersPerMinute" stackId="2" startPc="268439700"/>
-<entry endPc="268439789" name="seconds" stackId="5" startPc="268439700"/>
-<entry endPc="268439789" name="minutesPerKmOrMilesDecimal" stackId="3" startPc="268439700"/>
-<entry endPc="268441992" name="zone2" stackId="14" startPc="268439804"/>
-<entry endPc="268441992" name="zone1" stackId="13" startPc="268439804"/>
-<entry endPc="268441992" name="angle" stackId="6" startPc="268439804"/>
-<entry endPc="268441992" name="zonedegree" stackId="19" startPc="268439804"/>
-<entry endPc="268441992" name="lessAngle" stackId="7" startPc="268439804"/>
-<entry endPc="268441992" name="zone5CircleWidth" stackId="12" startPc="268439804"/>
-<entry endPc="268441992" name="zone2CircleWidth" stackId="9" startPc="268439804"/>
-<entry endPc="268441992" name="zone4CircleWidth" stackId="11" startPc="268439804"/>
-<entry endPc="268441992" name="zone5" stackId="17" startPc="268439804"/>
-<entry endPc="268441992" name="zone3CircleWidth" stackId="10" startPc="268439804"/>
-<entry endPc="268441992" name="zone1CircleWidth" stackId="8" startPc="268439804"/>
-<entry endPc="268441992" name="hrmax" stackId="18" startPc="268439804"/>
-<entry endPc="268441992" name="zone4" stackId="16" startPc="268439804"/>
-<entry endPc="268441992" name="zone3" stackId="15" startPc="268439804"/>
-<entry endPc="268442155" name="x" stackId="9" startPc="268442061"/>
-<entry endPc="268442155" name="y" stackId="10" startPc="268442061"/>
-<entry endPc="268442168" name="i" stackId="8" startPc="268442061"/>
-<entry endPc="268442218" name="sin" stackId="6" startPc="268441995"/>
-<entry endPc="268442218" name="cos" stackId="7" startPc="268441995"/>
-<entry endPc="268442353" name="i" stackId="1" startPc="268442328"/>
+<entry endPc="268435743" name="profile" stackId="1" startPc="268435503"/>
+<entry endPc="268435743" name="userAge" stackId="2" startPc="268435503"/>
+<entry endPc="268436163" name="i" stackId="2" startPc="268436097"/>
+<entry endPc="268436301" name="height" stackId="3" startPc="268436195"/>
+<entry endPc="268436301" name="width" stackId="2" startPc="268436195"/>
+<entry endPc="268437506" name="distanceKmOrMiles" stackId="8" startPc="268437437"/>
+<entry endPc="268437788" name="hours" stackId="10" startPc="268437592"/>
+<entry endPc="268437788" name="minutes" stackId="11" startPc="268437592"/>
+<entry endPc="268437788" name="seconds" stackId="12" startPc="268437592"/>
+<entry endPc="268438562" name="hours" stackId="15" startPc="268438290"/>
+<entry endPc="268438562" name="minutes" stackId="16" startPc="268438290"/>
+<entry endPc="268438562" name="seconds" stackId="17" startPc="268438290"/>
+<entry endPc="268438866" name="width" stackId="2" startPc="268436980"/>
+<entry endPc="268438866" name="timeInZone" stackId="14" startPc="268436980"/>
+<entry endPc="268438866" name="time" stackId="5" startPc="268436980"/>
+<entry endPc="268438866" name="clockTime" stackId="4" startPc="268436980"/>
+<entry endPc="268438866" name="duration" stackId="9" startPc="268436980"/>
+<entry endPc="268438866" name="zone" stackId="13" startPc="268436980"/>
+<entry endPc="268438866" name="ampm" stackId="6" startPc="268436980"/>
+<entry endPc="268438866" name="distStr" stackId="7" startPc="268436980"/>
+<entry endPc="268438866" name="height" stackId="3" startPc="268436980"/>
+<entry endPc="268438972" name="i" stackId="4" startPc="268438926"/>
+<entry endPc="268438998" name="size" stackId="1" startPc="268438869"/>
+<entry endPc="268438998" name="data" stackId="2" startPc="268438869"/>
+<entry endPc="268438998" name="sumOfData" stackId="3" startPc="268438869"/>
+<entry endPc="268439095" name="floor" stackId="2" startPc="268439053"/>
+<entry endPc="268439208" name="minutesPerKmOrMilesFloor" stackId="4" startPc="268439119"/>
+<entry endPc="268439208" name="metersPerMinute" stackId="2" startPc="268439119"/>
+<entry endPc="268439208" name="seconds" stackId="5" startPc="268439119"/>
+<entry endPc="268439208" name="minutesPerKmOrMilesDecimal" stackId="3" startPc="268439119"/>
+<entry endPc="268441685" name="zonedegree" stackId="8" startPc="268439223"/>
+<entry endPc="268441685" name="i" stackId="7" startPc="268439223"/>
+<entry endPc="268441685" name="zoneCircleWidth" stackId="6" startPc="268439223"/>
+<entry endPc="268441820" name="i" stackId="1" startPc="268441795"/>
 </localVars>
 <annotations/>
 <functions>
@@ -1469,6 +1414,10 @@
 <functionEntry name="compute" parent="HeartRateRunnerView">
 <param id="info"/>
 <documentation><![CDATA[<div class="description"> The given info object contains all the current workout<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry name="getZoneIdForHr" parent="HeartRateRunnerView">
+<param id="hr"/>
+<documentation/>
 </functionEntry>
 <functionEntry name="onLayout" parent="HeartRateRunnerView">
 <param id="dc"/>
@@ -1486,24 +1435,6 @@
 </functionEntry>
 <functionEntry name="drawValues" parent="HeartRateRunnerView">
 <param id="dc"/>
-<documentation/>
-</functionEntry>
-<functionEntry name="drawBattery" parent="HeartRateRunnerView">
-<param id="battery"/>
-<param id="dc"/>
-<param id="xStart"/>
-<param id="yStart"/>
-<param id="width"/>
-<param id="height"/>
-<documentation/>
-</functionEntry>
-<functionEntry name="drawGpsSign" parent="HeartRateRunnerView">
-<param id="dc"/>
-<param id="xStart"/>
-<param id="yStart"/>
-<param id="color1"/>
-<param id="color2"/>
-<param id="color3"/>
 <documentation/>
 </functionEntry>
 <functionEntry name="computeAverageSpeed" parent="HeartRateRunnerView">
@@ -1527,14 +1458,6 @@
 <param id="centerX"/>
 <param id="centerY"/>
 <param id="hr"/>
-<documentation><![CDATA[<div class="description"> @author Roelof Koelewijn<br/></div>]]></documentation>
-</functionEntry>
-<functionEntry name="fillPolygon" parent="HeartRateRunnerView">
-<param id="dc"/>
-<param id="dx"/>
-<param id="dy"/>
-<param id="theta"/>
-<param id="points"/>
 <documentation><![CDATA[<div class="description"> @author Roelof Koelewijn<br/></div>]]></documentation>
 </functionEntry>
 <functionEntry name="initialize" parent="DataQueue">
