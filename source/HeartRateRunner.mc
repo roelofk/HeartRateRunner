@@ -72,7 +72,7 @@ class HeartRateRunnerView extends Ui.DataField {
         elapsedTime = info.elapsedTime != null ? info.elapsedTime : 0;        
         hr = info.currentHeartRate != null ? info.currentHeartRate : 0;
         distance = info.elapsedDistance != null ? info.elapsedDistance : 0;
-        hr = 120;
+        hr = 150; //TEST
 	    if (hr != null) {
 			zoneId = getZoneIdForHr(hr) - 1;
 			System.println("Hello Monkey C! " + zoneId);
