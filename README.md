@@ -1,6 +1,6 @@
 # Heart Rate Runner
 
-![HeartRateRunner Screenshot Bright](/doc/HeartRateRunner1.png) ![HeartRateRunner Screenshot Dark](/doc/HeartRateRunner2.png)
+![HeartRateRunner Screenshot Bright](/doc/HeartRateRunner5.png) ![HeartRateRunner Screenshot Dark](/doc/HeartRateRunner6.png)
 
 Shows heart rate color arcs with a heart rate indicator.
 This is free a Data Field for the Fenix 3 that shows multiple values on a single field. 
@@ -30,9 +30,7 @@ Release versions of Heart Rate Runner are published in the [Garmin App Store](ht
 * AVG PACE: average pace over the whole activity.
 * DISTANCE: elapsed distance in km or miles based on system settings.
 * DURATION: duration of the activity in [hh:]mm:ss
-* GPS: green/blue bars for poor/acceptable/good signal, gray if no signal.
-* battery: visualization of battery percentage as indicator bar. 
-  If battery value is lower than 30 the indicator bar gets orange. If value is lower than 10% the exact value will be shown and the indicator bar turns red.
+* GPS: poor/weak/ok/strong signal.
 * use bright or dark color scheme based on the background color setting of the app (Settings/Apps/Run/Background Color).
   needs at least a firmware with SDK 1.2 compatibility (otherwise bright scheme is always used).
 
@@ -62,11 +60,17 @@ Hopefully you see the HeartRateRunner datafield and can read the values.
 
 ===============================================
 
+## Changelog 1.1
+* Heart rate better visualization (white on black) on bottom center
+* Added time in heart rate zone top center
+* Improved memory print
+* Removed battery and gps visualization in service of memory and time spend in heart rate zone
+
 ## Changelog 1.0.3
-* fixed an error
+* Fixed an error
 
 ## Changelog 1.0.2
-* heart rate indicator better accuracy
+* Heart rate indicator better accuracy
 
 ## Changelog 1.0.1
 * Heart rate zone indicator now black with white edges, hopefully better visible
@@ -79,6 +83,3 @@ Hopefully you see the HeartRateRunner datafield and can read the values.
 * hrmax = 217 - (0.85 × age);
 
 ===============================================
-
-## Future changes
-* Time spend in heart rate zone

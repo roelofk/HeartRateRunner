@@ -72,10 +72,11 @@ class HeartRateRunnerView extends Ui.DataField {
         elapsedTime = info.elapsedTime != null ? info.elapsedTime : 0;        
         hr = info.currentHeartRate != null ? info.currentHeartRate : 0;
         distance = info.elapsedDistance != null ? info.elapsedDistance : 0;
-        hr = 150; //TEST
+        gpsSignal = info.currentLocationAccuracy;
+        //hr = 150; //TEST
 	    if (hr != null) {
 			zoneId = getZoneIdForHr(hr) - 1;
-			System.println("Hello Monkey C! " + zoneId);
+			//System.println("Hello Monkey C! " + zoneId);
 			if(zoneId >= 0){
 				secondsInZone[zoneId] += 1;
 				//System.println("Hello Monkey C! " + zoneId);
@@ -197,6 +198,20 @@ class HeartRateRunnerView extends Ui.DataField {
         dc.setColor(inverseBackgroundColor, inverseBackgroundColor);
         dc.fillRectangle(0,180,width,38);
         
+        // gps 
+        dc.setColor(inverseTextColor, Graphics.COLOR_TRANSPARENT);
+        var gps = "";
+        if (gpsSignal < 2) {
+            gps = "poor";
+        } else if (gpsSignal == 2) {
+            gps = "weak";
+        } else if (gpsSignal == 3) {          
+            gps = "ok";
+        } else {
+            gps = "strong";
+        }
+        dc.drawText(60, 187, HEADER_FONT, gps, CENTER);
+        
         //hr
 		dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         //dc.setColor(lineColor, Graphics.COLOR_TRANSPARENT);
@@ -204,7 +219,7 @@ class HeartRateRunnerView extends Ui.DataField {
         
         // time
         dc.setColor(inverseTextColor, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(150, 197, HEADER_FONT, time, CENTER);
+        dc.drawText(160, 188, HEADER_FONT, time, CENTER);
         
         //grid 
         //dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
@@ -220,7 +235,7 @@ class HeartRateRunnerView extends Ui.DataField {
 		if (zoneId >= 0 && secondsInZone[zoneId] != null && secondsInZone[zoneId] > 0) {
             var hours = null;
             var minutes = secondsInZone[zoneId]/ 60;
-            var seconds = secondsInZone[zoneId];
+            var seconds = secondsInZone[zoneId] - (60 * minutes);
             
             if (minutes >= 60) {
                 hours = minutes / 60;
@@ -233,19 +248,19 @@ class HeartRateRunnerView extends Ui.DataField {
                 timeInZone = hours.format("%d") + ":" + minutes.format("%02d") + ":" + seconds.format("%02d");
             }
             dc.setColor(textColor, Graphics.COLOR_TRANSPARENT);
-        	dc.drawText(109, 40, Graphics.FONT_MEDIUM, timeInZone, CENTER);
+        	dc.drawText(109, 43, Graphics.FONT_MEDIUM, timeInZone, CENTER);
         } else {
             timeInZone = ZERO_TIME;
         }
 
 		// headers:
         dc.setColor(headerColor, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(65, 55, HEADER_FONT, paceStr, CENTER);
-        dc.drawText(65, 172, HEADER_FONT, avgPaceStr, CENTER);
-        dc.drawText(155, 55, HEADER_FONT, distanceStr, CENTER);
+        dc.drawText(60, 60, HEADER_FONT, paceStr, CENTER);
+        dc.drawText(70, 172, HEADER_FONT, avgPaceStr, CENTER);
+        dc.drawText(167, 60, HEADER_FONT, distanceStr, CENTER);
         dc.drawText(155, 172, HEADER_FONT, durationStr, CENTER);
         if(zone != 0){
-        	dc.drawText(109, 25, HEADER_FONT, "Time " + hrStr + " " + zone, CENTER);
+        	dc.drawText(109, 25, HEADER_FONT, hrStr + " " + zone, CENTER);
         }
     }
     
