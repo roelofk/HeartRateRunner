@@ -5,4 +5,10 @@
     <string id="hr">HR</string>
     <string id="distance">DIST</string>
     <string id="duration">DURATION</string>
+    <string id="zone1">zone1 start hr</string>
+    <string id="zone2">zone2 start hr</string>
+    <string id="zone3">zone3 start hr</string>
+    <string id="zone4">zone4 start hr</string>
+    <string id="zone5">zone5 start hr</string>
+    <string id="maxHr">maxHr maximum hr</string>
 </resources>

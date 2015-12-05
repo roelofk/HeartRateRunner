@@ -1,0 +1,20 @@
+<settings>
+    <setting propertyKey="@Properties.zone1" title="@Strings.zone1">
+        <settingConfig type="numeric" min="1" max="300" required="true" />
+    </setting>
+    <setting propertyKey="@Properties.zone2" title="@Strings.zone2">
+        <settingConfig type="numeric" min="1" max="300" required="true" />
+    </setting>
+    <setting propertyKey="@Properties.zone3" title="@Strings.zone3">
+        <settingConfig type="numeric" min="1" max="300" required="true" />
+    </setting>
+    <setting propertyKey="@Properties.zone4" title="@Strings.zone4">
+        <settingConfig type="numeric" min="1" max="300" required="true" />
+    </setting>
+    <setting propertyKey="@Properties.zone5" title="@Strings.zone5">
+        <settingConfig type="numeric" min="1" max="300" required="true" />
+    </setting>
+    <setting propertyKey="@Properties.maxHr" title="@Strings.maxHr">
+        <settingConfig type="numeric" min="1" max="300" required="true" />
+    </setting>
+</settings>

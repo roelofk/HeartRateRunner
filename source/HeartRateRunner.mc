@@ -2,9 +2,6 @@ using Toybox.Application as App;
 using Toybox.WatchUi as Ui;
 using Toybox.Graphics as Graphics;
 using Toybox.System as System;
-using Toybox.UserProfile as UserProfile;
-using Toybox.Time as Time;
-using Toybox.Time.Gregorian as Gregorian;
 
 //! @author Roelof Koelewijn - Many thanks to Konrad Paumann for the code for the dataFields check out his awsome runningfields Datafield
 class HeartRateRunner extends App.AppBase {
@@ -44,21 +41,17 @@ class HeartRateRunnerView extends Ui.DataField {
     hidden var hr = 0;
     hidden var distance = 0;
     hidden var elapsedTime = 0;
-    hidden var gpsSignal = 0;
-    hidden var maxHr = 0;
     hidden var zoneId = 0;
     hidden var secondsInZone = [0, 0, 0, 0, 0, 0];
-    hidden var zoneLowerBound = [0, 120, 140, 160, 180];
+    hidden var maxHr = Application.getApp().getProperty("maxHr");
+	hidden var zoneLowerBound = [Application.getApp().getProperty("zone1"), Application.getApp().getProperty("zone2"), Application.getApp().getProperty("zone3"), Application.getApp().getProperty("zone4"), Application.getApp().getProperty("zone5")];
+    
     
     hidden var hasBackgroundColorOption = false;
     
     function initialize() {
         DataField.initialize();
-        var profile = UserProfile.getProfile();
-		var userAge = Gregorian.info(Time.now(), Time.FORMAT_SHORT).year - profile.birthYear;
-		maxHr = 217 - (0.85 * userAge);
-		zoneLowerBound = [maxHr * 0.64, maxHr * 0.72, maxHr * 0.79, maxHr * 0.87, maxHr * 0.94];
-    }
+	}
 
     //! The given info object contains all the current workout
     function compute(info) {
@@ -72,14 +65,10 @@ class HeartRateRunnerView extends Ui.DataField {
         elapsedTime = info.elapsedTime != null ? info.elapsedTime : 0;        
         hr = info.currentHeartRate != null ? info.currentHeartRate : 0;
         distance = info.elapsedDistance != null ? info.elapsedDistance : 0;
-        gpsSignal = info.currentLocationAccuracy;
-        //hr = 150; //TEST
 	    if (hr != null) {
 			zoneId = getZoneIdForHr(hr) - 1;
-			//System.println("Hello Monkey C! " + zoneId);
 			if(zoneId >= 0){
 				secondsInZone[zoneId] += 1;
-				//System.println("Hello Monkey C! " + zoneId);
 			}
 		}
 	}
@@ -198,23 +187,8 @@ class HeartRateRunnerView extends Ui.DataField {
         dc.setColor(inverseBackgroundColor, inverseBackgroundColor);
         dc.fillRectangle(0,180,width,38);
         
-        // gps 
-        dc.setColor(inverseTextColor, Graphics.COLOR_TRANSPARENT);
-        var gps = "";
-        if (gpsSignal < 2) {
-            gps = "poor";
-        } else if (gpsSignal == 2) {
-            gps = "weak";
-        } else if (gpsSignal == 3) {          
-            gps = "ok";
-        } else {
-            gps = "strong";
-        }
-        dc.drawText(60, 187, HEADER_FONT, gps, CENTER);
-        
         //hr
 		dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        //dc.setColor(lineColor, Graphics.COLOR_TRANSPARENT);
         dc.drawText(109, 197, Graphics.FONT_LARGE, hr.format("%d"), CENTER);
         
         // time
@@ -222,12 +196,11 @@ class HeartRateRunnerView extends Ui.DataField {
         dc.drawText(160, 188, HEADER_FONT, time, CENTER);
         
         //grid 
-        //dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
         dc.setColor(lineColor, Graphics.COLOR_TRANSPARENT);
         dc.setPenWidth(1);
         dc.drawLine(0, height/2 + 7, width, height/2 + 7);
         
-        //RKO Arcs
+        //Arcs
 		var zone = drawZoneBarsArcs(dc, (height/2)+1, width/2, height/2, hr); //radius, center x, center y
 		
 		//time in zone

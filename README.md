@@ -25,12 +25,12 @@ Release versions of Heart Rate Runner are published in the [Garmin App Store](ht
 
 ## Features
 * HEART RATE: shows five colored zones. Zone is made thicker when in zone and indicator shows where in the zone you are.
+* HEART RATE SETTINS: you can set your own zones in settings
 * TIME: 12/24h mode based on system settings.
 * PACE: pace in km/min or mi/min based on system settings (as average of the last 10 values).
 * AVG PACE: average pace over the whole activity.
 * DISTANCE: elapsed distance in km or miles based on system settings.
 * DURATION: duration of the activity in [hh:]mm:ss
-* GPS: poor/weak/ok/strong signal.
 * use bright or dark color scheme based on the background color setting of the app (Settings/Apps/Run/Background Color).
   needs at least a firmware with SDK 1.2 compatibility (otherwise bright scheme is always used).
 
@@ -59,6 +59,10 @@ Start Run activity.
 Hopefully you see the HeartRateRunner datafield and can read the values.
 
 ===============================================
+
+## Changelog 1.2
+* Heart rate zones can now be set trough settings
+* Had to remove gps indication because of memory issues
 
 ## Changelog 1.1
 * Heart rate better visualization (white on black) on bottom center
