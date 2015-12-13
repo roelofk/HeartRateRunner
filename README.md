@@ -60,6 +60,11 @@ Hopefully you see the HeartRateRunner datafield and can read the values.
 
 ===============================================
 
+## Changelog 1.2.1
+* Minor change to heartrate indicator making it more precise
+* Hard set background of heartrate and time to black because of readability issues in inverse mode
+* Added some screenshots, showing settings and that the app can be deleted through Garmin connect app
+
 ## Changelog 1.2
 * Heart rate zones can now be set trough settings
 * Had to remove gps indication because of memory issues

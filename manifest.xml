@@ -7,9 +7,7 @@
             <iq:product id="d2bravo"/>
         </iq:products>
 
-        <iq:permissions>
-            <iq:uses-permission id="UserProfile"/>
-        </iq:permissions>
+        <iq:permissions/>
 
         <iq:languages>
             <iq:language>deu</iq:language>

@@ -184,7 +184,7 @@ class HeartRateRunnerView extends Ui.DataField {
         dc.drawText(155, 140, VALUE_FONT, duration, CENTER);
         
         //signs background
-        dc.setColor(inverseBackgroundColor, inverseBackgroundColor);
+        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
         dc.fillRectangle(0,180,width,38);
         
         //hr
@@ -199,6 +199,7 @@ class HeartRateRunnerView extends Ui.DataField {
         dc.setColor(lineColor, Graphics.COLOR_TRANSPARENT);
         dc.setPenWidth(1);
         dc.drawLine(0, height/2 + 7, width, height/2 + 7);
+        dc.drawLine(0, 180, width, 180);
         
         //Arcs
 		var zone = drawZoneBarsArcs(dc, (height/2)+1, width/2, height/2, hr); //radius, center x, center y
@@ -290,12 +291,12 @@ class HeartRateRunnerView extends Ui.DataField {
 		var zoneCircleWidth = [7, 7, 7, 7, 7, 7];
 		
 		var i;	
-		for (i = 0; i < zoneLowerBound.size() && hr > zoneLowerBound[i]; ++i) { }
+		for (i = 0; i < zoneLowerBound.size() && hr >= zoneLowerBound[i]; ++i) { }
 		if(i >= 0){
 			zoneCircleWidth[i] = 15;
 		}
 		
-		var zonedegree = 54 / (zoneLowerBound[1] - zoneLowerBound[0]);
+		var zonedegree = 58 / (zoneLowerBound[1] - zoneLowerBound[0]);
 		
 		//zone 1
 		dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
@@ -319,7 +320,7 @@ class HeartRateRunnerView extends Ui.DataField {
 		dc.drawArc(centerX, centerY, radius - zoneCircleWidth[5]/2, 1, 4, 320);
 		
 		if(hr >= zoneLowerBound[0] && hr < zoneLowerBound[1]){
-			zonedegree = (54 / (zoneLowerBound[1] - zoneLowerBound[0])) * (zoneLowerBound[1]-hr);
+			zonedegree = (58 / (zoneLowerBound[1] - zoneLowerBound[0])) * (zoneLowerBound[1]-hr);
 			dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
 			dc.setPenWidth(20);
 			dc.drawArc(centerX, centerY, radius - 8, 0, 166 + zonedegree - 3, 166 + zonedegree + 1);
@@ -327,7 +328,7 @@ class HeartRateRunnerView extends Ui.DataField {
 			dc.setPenWidth(17);
 			dc.drawArc(centerX, centerY, radius - 8, 0, 166 + zonedegree - 2, 166 + zonedegree);
 		}else if(hr >= zoneLowerBound[1] && hr < zoneLowerBound[2]){
-			zonedegree = (54 / (zoneLowerBound[2] - zoneLowerBound[1])) * (zoneLowerBound[2]-hr);
+			zonedegree = (58 / (zoneLowerBound[2] - zoneLowerBound[1])) * (zoneLowerBound[2]-hr);
 			dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
 			dc.setPenWidth(20);
 			dc.drawArc(centerX, centerY, radius - 8, 0, 112 + zonedegree - 3, 112 + zonedegree + 1);
@@ -335,7 +336,7 @@ class HeartRateRunnerView extends Ui.DataField {
 			dc.setPenWidth(17);
 			dc.drawArc(centerX, centerY, radius - 8, 0, 112 + zonedegree -2, 112 + zonedegree);
 		}else if(hr >= zoneLowerBound[2] && hr < zoneLowerBound[3]){
-			zonedegree = (54 / (zoneLowerBound[3] - zoneLowerBound[2])) * (zoneLowerBound[3]-hr);
+			zonedegree = (58 / (zoneLowerBound[3] - zoneLowerBound[2])) * (zoneLowerBound[3]-hr);
 			dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
 			dc.setPenWidth(20);
 			dc.drawArc(centerX, centerY, radius - 8, 0, 58 + zonedegree - 3, 58 + zonedegree + 1);
@@ -343,7 +344,7 @@ class HeartRateRunnerView extends Ui.DataField {
 			dc.setPenWidth(17);
 			dc.drawArc(centerX, centerY, radius - 8, 0, 58 + zonedegree - 2, 58 + zonedegree);
 		}else if(hr >= zoneLowerBound[3] && hr < zoneLowerBound[4]){
-			zonedegree = (54 / (zoneLowerBound[4] - zoneLowerBound[3])) * (zoneLowerBound[4]-hr);
+			zonedegree = (58 / (zoneLowerBound[4] - zoneLowerBound[3])) * (zoneLowerBound[4]-hr);
 			dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
 			dc.setPenWidth(20);
 			dc.drawArc(centerX, centerY, radius - 8, 0, 4 + zonedegree - 3, 4 + zonedegree + 1);
@@ -351,7 +352,7 @@ class HeartRateRunnerView extends Ui.DataField {
 			dc.setPenWidth(17);
 			dc.drawArc(centerX, centerY, radius - 8, 0, 4 + zonedegree - 2, 4 + zonedegree);
 		}else if(hr >= zoneLowerBound[4] && hr < maxHr){
-			zonedegree = (54 / (maxHr - zoneLowerBound[4])) * (maxHr-hr);
+			zonedegree = (58 / (maxHr - zoneLowerBound[4])) * (maxHr-hr);
 			dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
 			dc.setPenWidth(20);
 			if((320 + zonedegree) < 360){
