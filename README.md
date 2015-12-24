@@ -60,6 +60,10 @@ Hopefully you see the HeartRateRunner datafield and can read the values.
 
 ===============================================
 
+## Changelog 1.2.2
+
+* Moved Time to center
+
 ## Changelog 1.2.1
 * Minor change to heartrate indicator making it more precise
 * Hard set background of heartrate and time to black because of readability issues in inverse mode

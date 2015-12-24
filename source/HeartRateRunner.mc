@@ -73,7 +73,7 @@ class HeartRateRunnerView extends Ui.DataField {
 		}
 	}
 	
-	hidden function getZoneIdForHr(hr) {
+	function getZoneIdForHr(hr) {
 		var i;	
 		for (i = 0; i < zoneLowerBound.size() && hr > zoneLowerBound[i]; ++i) { }
 		return i;
@@ -192,8 +192,8 @@ class HeartRateRunnerView extends Ui.DataField {
         dc.drawText(109, 197, Graphics.FONT_LARGE, hr.format("%d"), CENTER);
         
         // time
-        dc.setColor(inverseTextColor, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(160, 188, HEADER_FONT, time, CENTER);
+        dc.setColor(textColor, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(width/2, height/2 - 7, Graphics.FONT_NUMBER_MILD, time, CENTER);
         
         //grid 
         dc.setColor(lineColor, Graphics.COLOR_TRANSPARENT);
