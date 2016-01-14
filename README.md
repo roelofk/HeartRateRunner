@@ -60,6 +60,10 @@ Hopefully you see the HeartRateRunner datafield and can read the values.
 
 ===============================================
 
+## Changelog 1.2.3
+
+* Optemized code
+
 ## Changelog 1.2.2
 
 * Moved Time to center

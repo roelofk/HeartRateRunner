@@ -86,7 +86,6 @@ class HeartRateRunnerView extends Ui.DataField {
     
     function onUpdate(dc) {
         setColors();
-        // reset background
         var width = dc.getWidth();
     	var height = dc.getHeight();
         dc.setColor(backgroundColor, backgroundColor);
@@ -262,15 +261,6 @@ class HeartRateRunnerView extends Ui.DataField {
             return hour - 12;
         }
         return hour;      
-    }
-    
-    //! convert to integer - round ceiling 
-    function toNumberCeil(float) {
-        var floor = float.toNumber();
-        if (float - floor > 0) {
-            return floor + 1;
-        }
-        return floor;
     }
     
     function getMinutesPerKmOrMile(speedMetersPerSecond) {
