@@ -20,7 +20,7 @@ class HeartRateRunnerView extends Ui.DataField {
 
     hidden const CENTER = Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER;
     hidden const HEADER_FONT = Graphics.FONT_XTINY;
-    hidden const VALUE_FONT = Graphics.FONT_NUMBER_MEDIUM;
+    hidden const VALUE_FONT = Graphics.FONT_NUMBER_MILD;
     hidden const ZERO_TIME = "0:00";
     hidden const ZERO_DISTANCE = "0.00";
     
@@ -127,24 +127,13 @@ class HeartRateRunnerView extends Ui.DataField {
         var width = dc.getWidth();
     	var height = dc.getHeight();
         
-        //time
-        var clockTime = System.getClockTime();
-        var time, ampm;
-        if (is24Hour) {
-            time = Lang.format("$1$:$2$", [clockTime.hour, clockTime.min.format("%.2d")]);
-            ampm = "";
-        } else {
-            time = Lang.format("$1$:$2$", [computeHour(clockTime.hour), clockTime.min.format("%.2d")]);
-            ampm = (clockTime.hour < 12) ? "am" : "pm";
-        }
-        
         //pace
         dc.setColor(textColor, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(60, 85, VALUE_FONT, getMinutesPerKmOrMile(computeAverageSpeed()), CENTER);
+        dc.drawText(60, 75, VALUE_FONT, getMinutesPerKmOrMile(computeAverageSpeed()), CENTER);
         
         //apace
         dc.setColor(textColor, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(60, 140, VALUE_FONT, getMinutesPerKmOrMile(avgSpeed), CENTER);
+        dc.drawText(60, 125, VALUE_FONT, getMinutesPerKmOrMile(avgSpeed), CENTER);
         
         //distance
         var distStr;
@@ -158,7 +147,7 @@ class HeartRateRunnerView extends Ui.DataField {
         } else {
             distStr = ZERO_DISTANCE;
         }
-        dc.drawText(155 , 85, VALUE_FONT, distStr, CENTER);
+        dc.drawText(155 , 75, VALUE_FONT, distStr, CENTER);
         
         //duration
         var duration;
@@ -180,28 +169,11 @@ class HeartRateRunnerView extends Ui.DataField {
         } else {
             duration = ZERO_TIME;
         } 
-        dc.drawText(155, 140, VALUE_FONT, duration, CENTER);
-        
-        //signs background
-        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
-        dc.fillRectangle(0,180,width,38);
-        
-        //hr
-		dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(109, 197, Graphics.FONT_LARGE, hr.format("%d"), CENTER);
-        
-        // time
-        dc.setColor(textColor, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(width/2, height/2 - 7, Graphics.FONT_NUMBER_MILD, time, CENTER);
-        
-        //grid 
-        dc.setColor(lineColor, Graphics.COLOR_TRANSPARENT);
-        dc.setPenWidth(1);
-        dc.drawLine(0, height/2 + 7, width, height/2 + 7);
-        dc.drawLine(0, 180, width, 180);
+        dc.drawText(155, 125, VALUE_FONT, duration, CENTER);
         
         //Arcs
-		var zone = drawZoneBarsArcs(dc, (height/2)+1, width/2, height/2, hr); //radius, center x, center y
+		//hr = 142;
+		var zone = drawZoneBarsArcs(dc, (height/2)+21, width/2, height/2+2, hr); //radius, center x, center y
 		
 		//time in zone
 		var timeInZone;
@@ -228,10 +200,10 @@ class HeartRateRunnerView extends Ui.DataField {
 
 		// headers:
         dc.setColor(headerColor, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(60, 60, HEADER_FONT, paceStr, CENTER);
-        dc.drawText(70, 172, HEADER_FONT, avgPaceStr, CENTER);
-        dc.drawText(167, 60, HEADER_FONT, distanceStr, CENTER);
-        dc.drawText(155, 172, HEADER_FONT, durationStr, CENTER);
+        dc.drawText(55, 55, HEADER_FONT, paceStr, CENTER);
+        dc.drawText(69, 145, HEADER_FONT, avgPaceStr, CENTER);
+        dc.drawText(162, 55, HEADER_FONT, distanceStr, CENTER);
+        dc.drawText(146, 145, HEADER_FONT, durationStr, CENTER);
         if(zone != 0){
         	dc.drawText(109, 25, HEADER_FONT, hrStr + " " + zone, CENTER);
         }
@@ -269,7 +241,7 @@ class HeartRateRunnerView extends Ui.DataField {
             var minutesPerKmOrMilesDecimal = kmOrMileInMeters / metersPerMinute;
             var minutesPerKmOrMilesFloor = minutesPerKmOrMilesDecimal.toNumber();
             var seconds = (minutesPerKmOrMilesDecimal - minutesPerKmOrMilesFloor) * 60;
-            return minutesPerKmOrMilesDecimal.format("%2d") + ":" + seconds.format("%02d");
+            return minutesPerKmOrMilesDecimal.format("%02d") + ":" + seconds.format("%02d");
         }
         return ZERO_TIME;
     }
@@ -278,12 +250,12 @@ class HeartRateRunnerView extends Ui.DataField {
     //function for arc
 	function drawZoneBarsArcs(dc, radius, centerX, centerY, hr){
 		
-		var zoneCircleWidth = [7, 7, 7, 7, 7, 7];
+		var zoneCircleWidth = [20, 20, 20, 20, 20, 20];
 		
 		var i;	
 		for (i = 0; i < zoneLowerBound.size() && hr >= zoneLowerBound[i]; ++i) { }
 		if(i >= 0){
-			zoneCircleWidth[i] = 15;
+			zoneCircleWidth[i] = 30;
 		}
 		
 		var zonedegree = 58 / (zoneLowerBound[1] - zoneLowerBound[0]);
@@ -312,52 +284,76 @@ class HeartRateRunnerView extends Ui.DataField {
 		if(hr >= zoneLowerBound[0] && hr < zoneLowerBound[1]){
 			zonedegree = (58 / (zoneLowerBound[1] - zoneLowerBound[0])) * (zoneLowerBound[1]-hr);
 			dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-			dc.setPenWidth(20);
-			dc.drawArc(centerX, centerY, radius - 8, 0, 166 + zonedegree - 3, 166 + zonedegree + 1);
+			dc.setPenWidth(33);
+			dc.drawArc(centerX, centerY, radius - 18, 0, 166 + zonedegree - 3, 166 + zonedegree + 1);
 			dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
-			dc.setPenWidth(17);
-			dc.drawArc(centerX, centerY, radius - 8, 0, 166 + zonedegree - 2, 166 + zonedegree);
+			dc.setPenWidth(31);
+			dc.drawArc(centerX, centerY, radius - 16, 0, 166 + zonedegree - 2, 166 + zonedegree);
 		}else if(hr >= zoneLowerBound[1] && hr < zoneLowerBound[2]){
 			zonedegree = (58 / (zoneLowerBound[2] - zoneLowerBound[1])) * (zoneLowerBound[2]-hr);
 			dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-			dc.setPenWidth(20);
-			dc.drawArc(centerX, centerY, radius - 8, 0, 112 + zonedegree - 3, 112 + zonedegree + 1);
+			dc.setPenWidth(33);
+			dc.drawArc(centerX, centerY, radius - 18, 0, 112 + zonedegree - 3, 112 + zonedegree + 1);
 			dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
-			dc.setPenWidth(17);
-			dc.drawArc(centerX, centerY, radius - 8, 0, 112 + zonedegree -2, 112 + zonedegree);
+			dc.setPenWidth(31);
+			dc.drawArc(centerX, centerY, radius - 16, 0, 112 + zonedegree -2, 112 + zonedegree);
 		}else if(hr >= zoneLowerBound[2] && hr < zoneLowerBound[3]){
 			zonedegree = (58 / (zoneLowerBound[3] - zoneLowerBound[2])) * (zoneLowerBound[3]-hr);
 			dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-			dc.setPenWidth(20);
-			dc.drawArc(centerX, centerY, radius - 8, 0, 58 + zonedegree - 3, 58 + zonedegree + 1);
+			dc.setPenWidth(33);
+			dc.drawArc(centerX, centerY, radius - 18, 0, 58 + zonedegree - 3, 58 + zonedegree + 1);
 			dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
-			dc.setPenWidth(17);
-			dc.drawArc(centerX, centerY, radius - 8, 0, 58 + zonedegree - 2, 58 + zonedegree);
+			dc.setPenWidth(31);
+			dc.drawArc(centerX, centerY, radius - 16, 0, 58 + zonedegree - 2, 58 + zonedegree);
 		}else if(hr >= zoneLowerBound[3] && hr < zoneLowerBound[4]){
 			zonedegree = (58 / (zoneLowerBound[4] - zoneLowerBound[3])) * (zoneLowerBound[4]-hr);
 			dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-			dc.setPenWidth(20);
-			dc.drawArc(centerX, centerY, radius - 8, 0, 4 + zonedegree - 3, 4 + zonedegree + 1);
+			dc.setPenWidth(33);
+			dc.drawArc(centerX, centerY, radius - 18, 0, 4 + zonedegree - 3, 4 + zonedegree + 1);
 			dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
-			dc.setPenWidth(17);
-			dc.drawArc(centerX, centerY, radius - 8, 0, 4 + zonedegree - 2, 4 + zonedegree);
+			dc.setPenWidth(31);
+			dc.drawArc(centerX, centerY, radius - 16, 0, 4 + zonedegree - 2, 4 + zonedegree);
 		}else if(hr >= zoneLowerBound[4] && hr < maxHr){
 			zonedegree = (58 / (maxHr - zoneLowerBound[4])) * (maxHr-hr);
 			dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-			dc.setPenWidth(20);
+			dc.setPenWidth(33);
 			if((320 + zonedegree) < 360){
-				dc.drawArc(centerX, centerY, radius - 8, 0, 320 + zonedegree - 3, 320 + zonedegree + 1);
+				dc.drawArc(centerX, centerY, radius - 18, 0, 320 + zonedegree - 3, 320 + zonedegree + 1);
 			}else{
-				dc.drawArc(centerX, centerY, radius - 8, 0, -50 + zonedegree - 3 , -50 + zonedegree + 1);
+				dc.drawArc(centerX, centerY, radius - 16, 0, -50 + zonedegree - 3 , -50 + zonedegree + 1);
 			}
 			dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
-			dc.setPenWidth(17);
+			dc.setPenWidth(31);
 			if((320 + zonedegree) < 360){
-				dc.drawArc(centerX, centerY, radius - 8, 0, 320 + zonedegree - 2, 320 + zonedegree);
+				dc.drawArc(centerX, centerY, radius - 18, 0, 320 + zonedegree - 2, 320 + zonedegree);
 			}else{
-				dc.drawArc(centerX, centerY, radius - 8, 0, -50 + zonedegree -2 , -50 + zonedegree);
+				dc.drawArc(centerX, centerY, radius - 16, 0, -50 + zonedegree -2 , -50 + zonedegree);
 			}
 		}
+		
+		 //hr background
+		var hrColor = Graphics.COLOR_BLACK;
+		if(i == 0){
+			hrColor = Graphics.COLOR_BLACK;
+		}else if(i == 1){
+			hrColor = Graphics.COLOR_LT_GRAY;
+		}else if(i == 2){
+			hrColor = Graphics.COLOR_BLUE;
+		}else if(i == 3){
+			hrColor = Graphics.COLOR_GREEN;
+		}else if(i == 4){
+			hrColor = Graphics.COLOR_ORANGE;
+		}else if(i == 5){
+			hrColor = Graphics.COLOR_RED;
+		}
+        dc.setColor(hrColor, Graphics.COLOR_TRANSPARENT);
+        dc.drawArc(109, 99, 15, 1, 360, 0);
+        dc.drawArc(109, 99, 15, 1, 0, 360);
+        dc.drawArc(104, 94, 5, 1, 0, 360);
+        
+        //hr
+		dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(109, 99, Graphics.FONT_LARGE, hr.format("%d"), CENTER);
 		
 		return i;
 	}

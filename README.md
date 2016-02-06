@@ -1,12 +1,12 @@
-# Heart Rate Runner
+# Heart Rate Runner Forerunner
 
-![HeartRateRunner Screenshot Bright](/doc/HeartRateRunner5.png) ![HeartRateRunner Screenshot Dark](/doc/HeartRateRunner6.png)
+![HeartRateRunner Screenshot 230](/doc/HeartRateRunnerForeRunner230.png) ![HeartRateRunner Screenshot 235](/doc/HeartRateRunnerForeRunner235.png)
 
 Shows heart rate color arcs with a heart rate indicator.
 This is free a Data Field for the Fenix 3 that shows multiple values on a single field. 
 Heart Rate Runner is open source and its code resides at github: https://github.com/roelofk/HeartRateRunner
 
-Release versions of Heart Rate Runner are published in the [Garmin App Store](https://apps.garmin.com/nl-NL/apps/cb7742e6-1914-490f-b581-fa41ad863b72)
+Release versions of Heart Rate Runner are published in the [Garmin App Store](https://apps.garmin.com/nl-NL/apps/ce70801d-cd9d-4b73-a02b-f70b2543714e)
 
 ===============================================
 
@@ -60,43 +60,7 @@ Hopefully you see the HeartRateRunner datafield and can read the values.
 
 ===============================================
 
-## Changelog 1.2.3
-
-* Optemized code
-
-## Changelog 1.2.2
-
-* Moved Time to center
-
-## Changelog 1.2.1
-* Minor change to heartrate indicator making it more precise
-* Hard set background of heartrate and time to black because of readability issues in inverse mode
-* Added some screenshots, showing settings and that the app can be deleted through Garmin connect app
-
-## Changelog 1.2
-* Heart rate zones can now be set trough settings
-* Had to remove gps indication because of memory issues
-
-## Changelog 1.1
-* Heart rate better visualization (white on black) on bottom center
-* Added time in heart rate zone top center
-* Improved memory print
-* Removed battery and gps visualization in service of memory and time spend in heart rate zone
-
-## Changelog 1.0.3
-* Fixed an error
-
-## Changelog 1.0.2
-* Heart rate indicator better accuracy
-
-## Changelog 1.0.1
-* Heart rate zone indicator now black with white edges, hopefully better visible
-* Heart rate zones are calculated with age: hrmax = 217 - (0.85 × age)
-* zone1 = maxHr * 0.64; 
-* zone2 = maxHr * 0.72; 
-* zone3 = maxHr * 0.79; 
-* zone4 = maxHr * 0.87;
-* zone5 = maxHr * 0.94;
-* hrmax = 217 - (0.85 × age);
+## Changelog 1.0
+* Special made version of HeartRateRunner for Forerunner watches by request of wvernon (Wayne)
 
 ===============================================

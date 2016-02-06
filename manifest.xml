@@ -2,11 +2,9 @@
     <iq:application entry="HeartRateRunner" id="06EF4E101A644D2497001A6B129E6342" launcherIcon="LauncherIcon" name="AppName" type="datafield">
 
         <iq:products>
-            <iq:product id="round_watch"/>
+            <iq:product id="fr630"/>
             <iq:product id="fr235"/>
             <iq:product id="fr230"/>
-            <iq:product id="fenix3"/>
-            <iq:product id="d2bravo"/>
         </iq:products>
 
         <iq:permissions/>
