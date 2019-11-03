@@ -20,7 +20,7 @@ class HeartRateRunnerView extends Ui.DataField {
 
     hidden const CENTER = Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER;
     hidden const HEADER_FONT = Graphics.FONT_XTINY;
-    hidden const VALUE_FONT = Graphics.FONT_NUMBER_MEDIUM;
+    hidden const VALUE_FONT = Graphics.FONT_SMALL;
     hidden const ZERO_TIME = "0:00";
     hidden const ZERO_DISTANCE = "0.00";
     
@@ -140,11 +140,11 @@ class HeartRateRunnerView extends Ui.DataField {
         
         //pace
         dc.setColor(textColor, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(60, 85, VALUE_FONT, getMinutesPerKmOrMile(computeAverageSpeed()), CENTER);
+        dc.drawText(.25 * width, .35 * height, VALUE_FONT, getMinutesPerKmOrMile(computeAverageSpeed()), CENTER);
         
         //apace
         dc.setColor(textColor, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(60, 140, VALUE_FONT, getMinutesPerKmOrMile(avgSpeed), CENTER);
+        dc.drawText(.25 * width, .6 * height, VALUE_FONT, getMinutesPerKmOrMile(avgSpeed), CENTER);
         
         //distance
         var distStr;
@@ -158,7 +158,7 @@ class HeartRateRunnerView extends Ui.DataField {
         } else {
             distStr = ZERO_DISTANCE;
         }
-        dc.drawText(155 , 85, VALUE_FONT, distStr, CENTER);
+        dc.drawText(.75 * width , .35 * height, VALUE_FONT, distStr, CENTER);
         
         //duration
         var duration;
@@ -180,25 +180,25 @@ class HeartRateRunnerView extends Ui.DataField {
         } else {
             duration = ZERO_TIME;
         } 
-        dc.drawText(155, 140, VALUE_FONT, duration, CENTER);
+        dc.drawText(.75 * width, .6 * height, VALUE_FONT, duration, CENTER);
         
         //signs background
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
-        dc.fillRectangle(0,180,width,38);
+        dc.fillRectangle(0,.82 * height,width,.2 * height);
         
         //hr
 		dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(109, 197, Graphics.FONT_LARGE, hr.format("%d"), CENTER);
+        dc.drawText(.5 * width, .9 * height, Graphics.FONT_LARGE, hr.format("%d"), CENTER);
         
         // time
         dc.setColor(textColor, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(width/2, height/2 - 7, Graphics.FONT_NUMBER_MILD, time, CENTER);
+        dc.drawText(width/2, height/2 - 7, Graphics.FONT_MEDIUM, time, CENTER);
         
         //grid 
         dc.setColor(lineColor, Graphics.COLOR_TRANSPARENT);
         dc.setPenWidth(1);
         dc.drawLine(0, height/2 + 7, width, height/2 + 7);
-        dc.drawLine(0, 180, width, 180);
+        dc.drawLine(0, .82 * height, width, .82 * height);
         
         //Arcs
 		var zone = drawZoneBarsArcs(dc, (height/2)+1, width/2, height/2, hr); //radius, center x, center y
@@ -228,10 +228,10 @@ class HeartRateRunnerView extends Ui.DataField {
 
 		// headers:
         dc.setColor(headerColor, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(60, 60, HEADER_FONT, paceStr, CENTER);
-        dc.drawText(70, 172, HEADER_FONT, avgPaceStr, CENTER);
-        dc.drawText(167, 60, HEADER_FONT, distanceStr, CENTER);
-        dc.drawText(155, 172, HEADER_FONT, durationStr, CENTER);
+        dc.drawText(.25 * width, .25 * height, HEADER_FONT, paceStr, CENTER);
+        dc.drawText(.25 * width, .7  * height, HEADER_FONT, avgPaceStr, CENTER);
+        dc.drawText(.75 * width, .25 * height, HEADER_FONT, distanceStr, CENTER);
+        dc.drawText(.75 * width, .7  * height, HEADER_FONT, durationStr, CENTER);
         if(zone != 0){
         	dc.drawText(109, 25, HEADER_FONT, hrStr + " " + zone, CENTER);
         }
