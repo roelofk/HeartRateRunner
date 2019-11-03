@@ -1,5 +1,5 @@
 <resources>
-	<string id="AppName">HeartRateRunner</string>
+	<string id="AppName">HeartRateRunner2</string>
     <string id="pace">PACE</string>
     <string id="avgpace">AVG PACE</string>
     <string id="hr">HR</string>
